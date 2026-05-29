@@ -4,10 +4,10 @@ import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 
 const stats = [
+  { number: "6+", label: "Years of Craft" },
   { number: "500+", label: "Stories Captured" },
-  { number: "8+", label: "Years Experience" },
-  { number: "12", label: "Countries" },
-  { number: "100%", label: "Happy Clients" },
+  { number: "20+", label: "Cities Covered" },
+  { number: "20+", label: "Team Members" },
 ];
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
         <SectionHeading
           label="The Artist Behind the Lens"
           title="Meet Abhinav"
-          description="With over eight years of capturing life's most precious moments, I've developed an eye for the extraordinary hidden within the ordinary."
+          description="A mechanical engineer by degree, a storyteller by calling — Abhinav turned a college hobby into one of the country's most trusted photography studios."
         />
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -29,7 +29,7 @@ export default function About() {
               <div className="relative overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80"
-                  alt="Abhinav - Photographer"
+                  alt="Abhinav - Founder & Lead Photographer"
                   className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
@@ -42,22 +42,57 @@ export default function About() {
             <AnimatedSection delay={0.2}>
               <div className="space-y-5 text-white/60 leading-relaxed max-w-xl mx-auto md:mx-0">
                 <p>
-                  Every frame I compose tells a story — your story. From the
-                  sacred rituals of an Indian wedding to the breathtaking peaks
-                  of the Himalayas, from intimate pre-wedding shoots in European
-                  cities to stunning architectural real estate — my lens has
-                  traveled the world, but my passion remains the same: creating
-                  timeless visual narratives.
+                  Photography began as a passion during my engineering days — a
+                  camera, a curiosity, and a refusal to stop learning. What
+                  started as a one-person hobby in 2020 has, over six years,
+                  grown into a fully bootstrapped studio with 20+ in-house
+                  creatives and editors working together for a seamless,
+                  end-to-end experience.
                 </p>
                 <p>
-                  I believe photography is not about capturing what you see, but
-                  revealing what you feel. That&apos;s why clients across 12
-                  countries trust me to tell their most important stories.
+                  Entirely self-taught, I&apos;ve photographed over 500 stories
+                  across more than 20 cities — weddings, pre-weddings, adventures,
+                  and beyond. Every frame is chased with the same obsession for
+                  detail that drew me to this craft in the first place.
+                </p>
+                <p>
+                  That dedication has been recognized nationally: featured on
+                  leading platforms like WedMeGood, where we were honored with
+                  the <span className="text-white/90 font-medium">User&apos;s
+                  Choice Award</span> among thousands of creators. But the
+                  trust of every couple and client remains the award I value
+                  most.
                 </p>
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.4} className="mt-12">
+            <AnimatedSection delay={0.35} className="mt-8">
+              <div className="inline-flex items-center gap-3 border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/5 px-5 py-3">
+                <svg
+                  className="w-6 h-6 text-[var(--color-accent)] shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"
+                  />
+                </svg>
+                <div className="text-left">
+                  <div className="text-white text-sm font-medium">
+                    WedMeGood User&apos;s Choice Award
+                  </div>
+                  <div className="text-white/40 text-xs">
+                    Chosen among 1000+ creators nationwide
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.5} className="mt-12">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
