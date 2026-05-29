@@ -25,13 +25,13 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # Build project
+      # Build + static export (produces the `out/` directory)
       - name: Build project
         run: yarn build
 
-      # Deploy to gh-pages
+      # Deploy the exported static site to the gh-pages branch
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: ./out
