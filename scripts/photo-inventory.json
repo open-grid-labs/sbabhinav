@@ -1,0 +1,1691 @@
+{
+  "generatedAt": "2026-07-26T13:31:42.294Z",
+  "source": {
+	"driveFolderId": "18St4jcZhdvKx-nkbADt6_DX5uSNYenxJ",
+	"driveUrl": "https://drive.google.com/drive/folders/18St4jcZhdvKx-nkbADt6_DX5uSNYenxJ",
+	"note": "Canonical source is the Drive folder above. The rclone remote is a per-machine alias (this run used 'gdrive:', scope drive.readonly) that must be configured to point at that folder's root_folder_id. Reliable per-folder enumeration. Originals are NOT stored locally; re-pull with rclone when optimizing."
+  },
+  "totalFiles": 333,
+  "totalBytes": 5176793878,
+  "projects": {
+	"AASHIMA CHANDEL": 21,
+	"AMIT X ANUJ": 31,
+	"Anuj & Amit Final Highlight.mp4": 1,
+	"HITAKSHI": 17,
+	"Neeraj X SHAGUN": 21,
+	"NEHA MATERNITY": 23,
+	"NISHANT X RASHMI": 8,
+	"Pratiksha x sayam": 65,
+	"Sofia x Sameer-20260609T054610Z-3-001": 42,
+	"Tenzin X dev": 50,
+	"Vipasha x nikhil edit wedding-20260609T054624Z-3-001": 19,
+	"Yogesh x shivani edit-20260609T054630Z-3-001": 35
+  },
+  "files": [
+	{
+	  "path": "AASHIMA CHANDEL/RUV00179.jpg",
+	  "size": 12292228,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00197.jpg",
+	  "size": 13514352,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00280.jpg",
+	  "size": 14817844,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00290.jpg",
+	  "size": 11301808,
+	  "mtime": "2026-06-28T18:17:16.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00300.jpg",
+	  "size": 9010402,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00305.jpg",
+	  "size": 11320020,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00458.jpg",
+	  "size": 12825728,
+	  "mtime": "2026-06-28T18:17:16.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00468.jpg",
+	  "size": 8639985,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00470.jpg",
+	  "size": 8816544,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00482.jpg",
+	  "size": 12538072,
+	  "mtime": "2026-06-28T18:17:16.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00488.jpg",
+	  "size": 12694346,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00747.jpg",
+	  "size": 14367657,
+	  "mtime": "2026-06-28T18:17:16.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00751.jpg",
+	  "size": 12120820,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00761.jpg",
+	  "size": 12596320,
+	  "mtime": "2026-06-28T18:17:35.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00773.jpg",
+	  "size": 12731315,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00780.jpg",
+	  "size": 13539887,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00786.jpg",
+	  "size": 14499629,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00804.jpg",
+	  "size": 10735869,
+	  "mtime": "2026-06-28T18:17:35.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00810.jpg",
+	  "size": 10872900,
+	  "mtime": "2026-06-28T18:17:34.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00811.jpg",
+	  "size": 13345517,
+	  "mtime": "2026-06-28T18:17:17.000Z"
+	},
+	{
+	  "path": "AASHIMA CHANDEL/RUV00862.jpg",
+	  "size": 12446141,
+	  "mtime": "2026-06-28T18:17:35.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A2833.jpg",
+	  "size": 7745301,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A2882.jpg",
+	  "size": 9091965,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3066.jpg",
+	  "size": 7719564,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3070.jpg",
+	  "size": 4032164,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3122.jpg",
+	  "size": 9176462,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3156.jpg",
+	  "size": 8936256,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3163.jpg",
+	  "size": 12368606,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3649.jpg",
+	  "size": 16527958,
+	  "mtime": "2026-06-28T18:16:45.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3660.jpg",
+	  "size": 14134388,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3663.jpg",
+	  "size": 10498468,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3671.jpg",
+	  "size": 13903826,
+	  "mtime": "2026-06-28T18:16:45.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3693.jpg",
+	  "size": 11325954,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3771.jpg",
+	  "size": 11848730,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3773.jpg",
+	  "size": 10125515,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3784.jpg",
+	  "size": 6995843,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3802.jpg",
+	  "size": 14458587,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3810.jpg",
+	  "size": 14728108,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3819.jpg",
+	  "size": 15325122,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A3858.jpg",
+	  "size": 10547730,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4218.jpg",
+	  "size": 16820216,
+	  "mtime": "2026-06-28T18:16:45.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4250.jpg",
+	  "size": 8175734,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4262.jpg",
+	  "size": 11961490,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4273.jpg",
+	  "size": 8615998,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4276.jpg",
+	  "size": 10857308,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4281.jpg",
+	  "size": 9046822,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4349.jpg",
+	  "size": 10718985,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4361.jpg",
+	  "size": 11162473,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4736.jpg",
+	  "size": 10885925,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4745.jpg",
+	  "size": 8891770,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4750.jpg",
+	  "size": 11567439,
+	  "mtime": "2026-06-28T18:16:44.000Z"
+	},
+	{
+	  "path": "AMIT X ANUJ/amit edited/_Q5A4762.jpg",
+	  "size": 9181027,
+	  "mtime": "2026-06-28T18:16:43.000Z"
+	},
+	{
+	  "path": "Anuj & Amit Final Highlight.mp4",
+	  "size": 1042958140,
+	  "mtime": "2023-07-01T09:19:19.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07053.jpg",
+	  "size": 20692914,
+	  "mtime": "2026-06-28T18:16:53.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07066.jpg",
+	  "size": 19093476,
+	  "mtime": "2026-06-28T18:16:53.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07073.jpg",
+	  "size": 15219129,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07154.jpg",
+	  "size": 18926824,
+	  "mtime": "2026-06-28T18:16:52.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07160.jpg",
+	  "size": 19268818,
+	  "mtime": "2026-06-28T18:16:52.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07169.jpg",
+	  "size": 18779447,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC07172.jpg",
+	  "size": 18868742,
+	  "mtime": "2026-06-28T18:16:53.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08023.jpg",
+	  "size": 18756049,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08024.jpg",
+	  "size": 19296033,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08028.jpg",
+	  "size": 18121858,
+	  "mtime": "2026-06-28T18:16:53.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08035.jpg",
+	  "size": 20195034,
+	  "mtime": "2026-06-28T18:16:53.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08072.jpg",
+	  "size": 18166897,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/DSC08088.jpg",
+	  "size": 14244642,
+	  "mtime": "2026-06-28T18:16:52.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/RUV01505.jpg",
+	  "size": 9854993,
+	  "mtime": "2026-06-28T18:16:50.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/RUV01521.jpg",
+	  "size": 9924839,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/RUV01527.jpg",
+	  "size": 8533172,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "HITAKSHI/bride Mandi edited/RUV01534.jpg",
+	  "size": 8755158,
+	  "mtime": "2026-06-28T18:16:51.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01000.jpg",
+	  "size": 14843010,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01201.jpg",
+	  "size": 18937727,
+	  "mtime": "2026-06-28T18:16:19.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01227.jpg",
+	  "size": 17432691,
+	  "mtime": "2026-06-28T18:16:19.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01239.jpg",
+	  "size": 12347240,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01244.jpg",
+	  "size": 13975062,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01245.jpg",
+	  "size": 14019859,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01381.jpg",
+	  "size": 11725706,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01386.jpg",
+	  "size": 13641661,
+	  "mtime": "2026-06-28T18:16:19.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01401.jpg",
+	  "size": 11883698,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01408.jpg",
+	  "size": 11560933,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01428.jpg",
+	  "size": 13039806,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01434.jpg",
+	  "size": 15289627,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01436.jpg",
+	  "size": 16246483,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01443.jpg",
+	  "size": 16269433,
+	  "mtime": "2026-06-28T18:16:19.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01457.jpg",
+	  "size": 15124663,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01477.jpg",
+	  "size": 16762729,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01484.jpg",
+	  "size": 14493781,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01523.jpg",
+	  "size": 12907068,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01534.jpg",
+	  "size": 9153533,
+	  "mtime": "2026-06-28T18:16:17.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01537.jpg",
+	  "size": 10503525,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "Neeraj X SHAGUN/RUV01541.jpg",
+	  "size": 12399390,
+	  "mtime": "2026-06-28T18:16:18.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00009.jpg",
+	  "size": 7195704,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00016.jpg",
+	  "size": 7100514,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00017.jpg",
+	  "size": 6892427,
+	  "mtime": "2026-06-28T18:17:01.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00019.jpg",
+	  "size": 7030216,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00048.jpg",
+	  "size": 8101860,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00061.jpg",
+	  "size": 7381023,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00093.jpg",
+	  "size": 6127701,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00107.jpg",
+	  "size": 7512919,
+	  "mtime": "2026-06-28T18:18:21.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00199 copy.jpg",
+	  "size": 3955426,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00199.jpg",
+	  "size": 5910487,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00210.jpg",
+	  "size": 8167370,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00227.jpg",
+	  "size": 4617658,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00233.jpg",
+	  "size": 6373280,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00245.jpg",
+	  "size": 7621436,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00247.jpg",
+	  "size": 7443479,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00273.jpg",
+	  "size": 11478267,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00288.jpg",
+	  "size": 11398849,
+	  "mtime": "2026-06-28T18:17:01.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00291.jpg",
+	  "size": 5381966,
+	  "mtime": "2026-06-28T18:17:00.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00294.jpg",
+	  "size": 11067531,
+	  "mtime": "2026-06-28T18:17:01.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00307.jpg",
+	  "size": 11267731,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00309.jpg",
+	  "size": 9107467,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00313.jpg",
+	  "size": 10206285,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "NEHA MATERNITY/RUV00320.jpg",
+	  "size": 9340213,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01158.jpg",
+	  "size": 13422212,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01159.jpg",
+	  "size": 13886514,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01170.jpg",
+	  "size": 10721058,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01197.jpg",
+	  "size": 13720940,
+	  "mtime": "2026-06-28T18:17:49.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01224.jpg",
+	  "size": 16576376,
+	  "mtime": "2026-06-28T18:17:49.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01229.jpg",
+	  "size": 12720257,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01234.jpg",
+	  "size": 14917394,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "NISHANT X RASHMI/RUV01238.jpg",
+	  "size": 11978436,
+	  "mtime": "2026-06-28T18:17:48.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC00883.jpg",
+	  "size": 16460085,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC00907.jpg",
+	  "size": 16136526,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC00927.jpg",
+	  "size": 13250330,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC00992.jpg",
+	  "size": 13771330,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01017.jpg",
+	  "size": 13712768,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01021.jpg",
+	  "size": 13675065,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01024.jpg",
+	  "size": 21147752,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01027.jpg",
+	  "size": 21552790,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01031.jpg",
+	  "size": 23415073,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01043.jpg",
+	  "size": 28014803,
+	  "mtime": "2026-06-28T18:18:28.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01044.jpg",
+	  "size": 16740546,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01066.jpg",
+	  "size": 15120560,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01069.jpg",
+	  "size": 21535128,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01073.jpg",
+	  "size": 17823288,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01080.jpg",
+	  "size": 16841983,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01085.jpg",
+	  "size": 15823897,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01090.jpg",
+	  "size": 14310391,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01091.jpg",
+	  "size": 21963647,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01103.jpg",
+	  "size": 11352817,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01107.jpg",
+	  "size": 18683881,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01111.jpg",
+	  "size": 19841416,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01122.jpg",
+	  "size": 21839130,
+	  "mtime": "2026-06-28T18:18:26.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01125.jpg",
+	  "size": 18177465,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01138.jpg",
+	  "size": 19103214,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01150.jpg",
+	  "size": 16521510,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01156.jpg",
+	  "size": 24482415,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01172.jpg",
+	  "size": 21694059,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01179.jpg",
+	  "size": 20621412,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01203.jpg",
+	  "size": 20281400,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01214.jpg",
+	  "size": 16487474,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01242.jpg",
+	  "size": 22073815,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01262.jpg",
+	  "size": 23800249,
+	  "mtime": "2026-06-28T18:18:28.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01287.jpg",
+	  "size": 11430496,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01317.jpg",
+	  "size": 16268245,
+	  "mtime": "2026-06-28T18:18:21.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01322.jpg",
+	  "size": 24455204,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01325.jpg",
+	  "size": 18810767,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01328.jpg",
+	  "size": 22165880,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01350.jpg",
+	  "size": 6995605,
+	  "mtime": "2026-06-28T18:18:21.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01351.jpg",
+	  "size": 10782595,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01357.jpg",
+	  "size": 7749704,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01363.jpg",
+	  "size": 7014392,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01375.jpg",
+	  "size": 7672764,
+	  "mtime": "2026-06-28T18:18:21.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01382.jpg",
+	  "size": 23890498,
+	  "mtime": "2026-06-28T18:18:25.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01397.jpg",
+	  "size": 20399767,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01417.jpg",
+	  "size": 22597311,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01438.jpg",
+	  "size": 25926061,
+	  "mtime": "2026-06-28T18:18:24.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/DSC01441.jpg",
+	  "size": 19605605,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00195.jpg",
+	  "size": 8736737,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00202.jpg",
+	  "size": 9540239,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00204.jpg",
+	  "size": 9411712,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00213.jpg",
+	  "size": 21431242,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00220.jpg",
+	  "size": 14043864,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00256.jpg",
+	  "size": 12147587,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00260.jpg",
+	  "size": 10650762,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00263.jpg",
+	  "size": 8859104,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00292.jpg",
+	  "size": 10391205,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/mehendi/RUV00297.jpg",
+	  "size": 11862055,
+	  "mtime": "2026-06-28T18:17:09.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV00907.jpg",
+	  "size": 8034872,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV00920.jpg",
+	  "size": 9270600,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV00993.jpg",
+	  "size": 14144080,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV00996.jpg",
+	  "size": 16681849,
+	  "mtime": "2026-06-28T18:18:23.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV00997.jpg",
+	  "size": 16270268,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV01001.jpg",
+	  "size": 12953459,
+	  "mtime": "2026-06-28T18:18:22.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV01015.jpg",
+	  "size": 11912086,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Pratiksha x sayam/RUV01057.jpg",
+	  "size": 19290499,
+	  "mtime": "2026-06-28T18:18:27.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (128) (1).jpg",
+	  "size": 13130472,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (147).jpg",
+	  "size": 9598432,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (167).jpg",
+	  "size": 14826709,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (180).jpg",
+	  "size": 18606715,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (190).jpg",
+	  "size": 15478905,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (192).jpg",
+	  "size": 14224135,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (198).jpg",
+	  "size": 13468130,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (218).jpg",
+	  "size": 19094820,
+	  "mtime": "2026-05-01T17:07:42.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (244).jpg",
+	  "size": 12989221,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (272).jpg",
+	  "size": 13555475,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (275).jpg",
+	  "size": 12550412,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (277).jpg",
+	  "size": 10436545,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (346).jpg",
+	  "size": 15731529,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (409).jpg",
+	  "size": 15098181,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (41).jpg",
+	  "size": 12268394,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (419).jpg",
+	  "size": 15137938,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (426).jpg",
+	  "size": 16564235,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (434).jpg",
+	  "size": 18654097,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (444).jpg",
+	  "size": 15295843,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (449).jpg",
+	  "size": 18074561,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (45).jpg",
+	  "size": 12419517,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (532).jpg",
+	  "size": 23510765,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (541).jpg",
+	  "size": 22363405,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (581) (1).jpg",
+	  "size": 15115526,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (590).jpg",
+	  "size": 13103345,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (591).jpg",
+	  "size": 19582844,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (594).jpg",
+	  "size": 19898175,
+	  "mtime": "2026-05-01T17:07:42.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (596).jpg",
+	  "size": 15454041,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (604).jpg",
+	  "size": 13968312,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (607).jpg",
+	  "size": 18814067,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (614).jpg",
+	  "size": 21873344,
+	  "mtime": "2026-05-01T17:07:38.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (637).jpg",
+	  "size": 19577597,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (641).jpg",
+	  "size": 20262004,
+	  "mtime": "2026-05-01T17:07:42.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (647).jpg",
+	  "size": 20680197,
+	  "mtime": "2026-05-01T17:07:42.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (71).jpg",
+	  "size": 14001581,
+	  "mtime": "2026-05-01T17:07:40.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/A (79).jpg",
+	  "size": 12111189,
+	  "mtime": "2026-05-01T17:07:36.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/DSC01082.jpg",
+	  "size": 21632775,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/RUV01102.jpg",
+	  "size": 10312749,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/RUV01106.jpg",
+	  "size": 16035747,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/RUV01111.jpg",
+	  "size": 18901619,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/RUV01112.jpg",
+	  "size": 16009383,
+	  "mtime": "2026-05-09T07:34:18.000Z"
+	},
+	{
+	  "path": "Sofia x Sameer-20260609T054610Z-3-001/drive-download-20260509T073033Z-3-001/RUV01113.jpg",
+	  "size": 17222717,
+	  "mtime": "2026-05-09T07:34:20.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01746.jpg",
+	  "size": 4587585,
+	  "mtime": "2026-05-29T05:11:13.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01760.jpg",
+	  "size": 4395744,
+	  "mtime": "2026-05-29T05:11:20.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01795.jpg",
+	  "size": 2793315,
+	  "mtime": "2026-05-29T05:11:25.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01812.jpg",
+	  "size": 6047172,
+	  "mtime": "2026-05-29T05:11:35.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01867.jpg",
+	  "size": 4963730,
+	  "mtime": "2026-05-29T05:12:22.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01915.jpg",
+	  "size": 4818874,
+	  "mtime": "2026-05-29T05:17:08.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC01972.jpg",
+	  "size": 4058359,
+	  "mtime": "2026-05-29T05:12:47.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02018.jpg",
+	  "size": 5522176,
+	  "mtime": "2026-05-29T05:13:21.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02021.jpg",
+	  "size": 5283990,
+	  "mtime": "2026-05-29T05:17:01.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02046.jpg",
+	  "size": 5506821,
+	  "mtime": "2026-05-29T05:13:13.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02056.jpg",
+	  "size": 4703054,
+	  "mtime": "2026-05-29T05:13:51.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02069.jpg",
+	  "size": 6565377,
+	  "mtime": "2026-05-29T05:13:40.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02132.jpg",
+	  "size": 6111205,
+	  "mtime": "2026-05-29T05:14:05.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC02143.jpg",
+	  "size": 6541531,
+	  "mtime": "2026-05-29T05:17:25.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC03435.jpg",
+	  "size": 3707440,
+	  "mtime": "2026-05-29T05:20:10.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC03713.jpg",
+	  "size": 3543337,
+	  "mtime": "2026-05-29T05:20:24.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC03947.jpg",
+	  "size": 5522968,
+	  "mtime": "2026-05-29T05:20:41.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC03988.jpg",
+	  "size": 4324893,
+	  "mtime": "2026-05-29T05:21:01.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC04488.jpg",
+	  "size": 3367785,
+	  "mtime": "2026-05-29T05:21:32.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/DSC04530.jpg",
+	  "size": 2615293,
+	  "mtime": "2026-05-29T05:21:41.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA1870.jpg",
+	  "size": 3789082,
+	  "mtime": "2026-05-29T05:05:10.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA1876.jpg",
+	  "size": 3836941,
+	  "mtime": "2026-05-29T05:05:22.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA1993.jpg",
+	  "size": 5022360,
+	  "mtime": "2026-05-29T05:05:31.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA2044.jpg",
+	  "size": 1789543,
+	  "mtime": "2026-05-29T05:05:41.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA2054.jpg",
+	  "size": 4279075,
+	  "mtime": "2026-05-29T05:05:50.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA2239.jpg",
+	  "size": 3208427,
+	  "mtime": "2026-05-29T05:07:25.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA3665.jpg",
+	  "size": 2664073,
+	  "mtime": "2026-05-29T05:21:57.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PANA4481.jpg",
+	  "size": 1868527,
+	  "mtime": "2026-05-29T05:22:11.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PRAK8891.jpg",
+	  "size": 2182077,
+	  "mtime": "2026-05-29T05:06:22.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PRAK8971.jpg",
+	  "size": 5489408,
+	  "mtime": "2026-05-29T05:20:52.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/PRAK9577.jpg",
+	  "size": 4163293,
+	  "mtime": "2026-05-29T05:10:59.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00114.jpg",
+	  "size": 4845820,
+	  "mtime": "2026-05-29T05:18:44.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00121.jpg",
+	  "size": 4910899,
+	  "mtime": "2026-05-29T05:18:38.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00238.jpg",
+	  "size": 2606560,
+	  "mtime": "2026-05-29T05:09:14.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00287.jpg",
+	  "size": 4784346,
+	  "mtime": "2026-05-29T05:15:46.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00294.jpg",
+	  "size": 4996369,
+	  "mtime": "2026-05-29T05:15:48.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00336 (1).jpg",
+	  "size": 1980733,
+	  "mtime": "2026-05-29T05:22:42.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00336.jpg",
+	  "size": 4964877,
+	  "mtime": "2026-05-29T05:15:53.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00377.jpg",
+	  "size": 5045525,
+	  "mtime": "2026-05-29T05:16:13.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00410.jpg",
+	  "size": 5235148,
+	  "mtime": "2026-05-29T05:16:32.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00417.jpg",
+	  "size": 5116162,
+	  "mtime": "2026-05-29T05:16:38.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00429.jpg",
+	  "size": 2690480,
+	  "mtime": "2026-05-29T05:22:55.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00491-Edit.jpg",
+	  "size": 11438986,
+	  "mtime": "2026-05-29T05:19:12.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00494.jpg",
+	  "size": 2139666,
+	  "mtime": "2026-05-29T05:19:22.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00497.jpg",
+	  "size": 2075042,
+	  "mtime": "2026-05-29T05:19:16.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00506.jpg",
+	  "size": 2337479,
+	  "mtime": "2026-05-29T05:19:31.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00539.jpg",
+	  "size": 5255883,
+	  "mtime": "2026-05-29T05:10:44.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00544.jpg",
+	  "size": 5078529,
+	  "mtime": "2026-05-29T05:10:53.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00593.jpg",
+	  "size": 3576899,
+	  "mtime": "2026-05-29T05:23:17.000Z"
+	},
+	{
+	  "path": "Tenzin X dev/RUV00619.jpg",
+	  "size": 3257297,
+	  "mtime": "2026-05-29T05:23:11.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC00544.jpg",
+	  "size": 11996635,
+	  "mtime": "2026-06-28T18:18:15.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC00545.jpg",
+	  "size": 21418202,
+	  "mtime": "2026-06-28T18:18:14.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC00546.jpg",
+	  "size": 20079137,
+	  "mtime": "2026-06-28T18:18:15.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC00551.jpg",
+	  "size": 19940841,
+	  "mtime": "2026-06-28T18:18:16.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01147.jpg",
+	  "size": 16927615,
+	  "mtime": "2026-06-28T18:18:15.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01156.jpg",
+	  "size": 16039914,
+	  "mtime": "2026-06-28T18:18:12.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01157.jpg",
+	  "size": 16050446,
+	  "mtime": "2026-06-28T18:18:13.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01162.jpg",
+	  "size": 16284823,
+	  "mtime": "2026-06-28T18:18:13.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01171.jpg",
+	  "size": 15235391,
+	  "mtime": "2026-06-28T18:18:12.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01173.jpg",
+	  "size": 16675652,
+	  "mtime": "2026-06-28T18:18:14.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01174.jpg",
+	  "size": 13641486,
+	  "mtime": "2026-06-28T18:18:13.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01176.jpg",
+	  "size": 13311534,
+	  "mtime": "2026-06-28T18:18:14.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01177.jpg",
+	  "size": 13877719,
+	  "mtime": "2026-06-28T18:18:14.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01184.jpg",
+	  "size": 12964262,
+	  "mtime": "2026-06-28T18:18:10.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01187.jpg",
+	  "size": 12758562,
+	  "mtime": "2026-06-28T18:18:12.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01191.jpg",
+	  "size": 13293739,
+	  "mtime": "2026-06-28T18:18:10.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01196.jpg",
+	  "size": 16729305,
+	  "mtime": "2026-06-28T18:18:12.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01200.jpg",
+	  "size": 18274013,
+	  "mtime": "2026-06-28T18:18:10.000Z"
+	},
+	{
+	  "path": "Vipasha x nikhil edit wedding-20260609T054624Z-3-001/Vipasha x nikhil edit wedding/DSC01760.jpg",
+	  "size": 13647872,
+	  "mtime": "2026-06-28T18:18:12.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC06271.jpg",
+	  "size": 7754254,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC06329.jpg",
+	  "size": 10021534,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC06421.jpg",
+	  "size": 10175617,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC06456.jpg",
+	  "size": 16444701,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC06457.jpg",
+	  "size": 11767824,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07801.jpg",
+	  "size": 9127775,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07811.jpg",
+	  "size": 13649835,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07813.jpg",
+	  "size": 20656707,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07911.jpg",
+	  "size": 16500740,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07913.jpg",
+	  "size": 12925087,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07932.jpg",
+	  "size": 10095928,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07937.jpg",
+	  "size": 13185066,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07982.jpg",
+	  "size": 6200787,
+	  "mtime": "2026-06-28T18:18:36.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC07999.jpg",
+	  "size": 4669428,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08029.jpg",
+	  "size": 16954403,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08034.jpg",
+	  "size": 15001347,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08037.jpg",
+	  "size": 14075293,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08043.jpg",
+	  "size": 14764121,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08045.jpg",
+	  "size": 15545363,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08048.jpg",
+	  "size": 12093563,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08049.jpg",
+	  "size": 13756252,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08059.jpg",
+	  "size": 17069021,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08065.jpg",
+	  "size": 12371476,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08077.jpg",
+	  "size": 12119195,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08081.jpg",
+	  "size": 8780818,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08085.jpg",
+	  "size": 8352643,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08088.jpg",
+	  "size": 9815810,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08091.jpg",
+	  "size": 12097349,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/DSC08105.jpg",
+	  "size": 13470139,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00383.jpg",
+	  "size": 19002092,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00388.jpg",
+	  "size": 18654320,
+	  "mtime": "2026-06-28T18:18:35.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00395.jpg",
+	  "size": 10973916,
+	  "mtime": "2026-06-28T18:18:34.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00400.jpg",
+	  "size": 4672135,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00403.jpg",
+	  "size": 4710006,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	},
+	{
+	  "path": "Yogesh x shivani edit-20260609T054630Z-3-001/Yogesh x shivani edit/RUV00405.jpg",
+	  "size": 6053145,
+	  "mtime": "2026-06-28T18:18:33.000Z"
+	}
+  ]
+}

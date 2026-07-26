@@ -1,101 +1,57 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {useCallback, useEffect, useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
-
-const categories = [
-  "All",
-  "Wedding",
-  "Pre-Wedding",
-  "Adventure",
-  "Real Estate",
-  "Portrait",
-];
-
-const portfolioItems = [
-  {
-    title: "Royal Rajasthan Wedding",
-    category: "Wedding",
-    location: "Udaipur, India",
-    image:
-      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80",
-    span: "col-span-1 md:col-span-2 row-span-2",
-  },
-  {
-    title: "Santorini Love Story",
-    category: "Pre-Wedding",
-    location: "Santorini, Greece",
-    image:
-      "https://images.unsplash.com/photo-1529636798458-92182e662485?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Mountain Peak Proposal",
-    category: "Adventure",
-    location: "Swiss Alps",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Heritage Villa",
-    category: "Real Estate",
-    location: "Goa, India",
-    image:
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Tuscan Garden Ceremony",
-    category: "Wedding",
-    location: "Tuscany, Italy",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Desert Dunes Portrait",
-    category: "Portrait",
-    location: "Dubai, UAE",
-    image:
-      "https://images.unsplash.com/photo-1524638431109-93d95c968f03?w=800&q=80",
-    span: "col-span-1 md:col-span-2",
-  },
-  {
-    title: "Patagonia Expedition",
-    category: "Adventure",
-    location: "Patagonia, Chile",
-    image:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Modern Penthouse",
-    category: "Real Estate",
-    location: "Mumbai, India",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-    span: "col-span-1",
-  },
-  {
-    title: "Cherry Blossom Romance",
-    category: "Pre-Wedding",
-    location: "Tokyo, Japan",
-    image:
-      "https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=800&q=80",
-    span: "col-span-1",
-  },
-];
+import {categories, type Project, projects} from "@/data/projects";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
+	const [active, setActive] = useState<Project | null>(null);
+	const [lightbox, setLightbox] = useState<number | null>(null);
 
   const filtered =
     filter === "All"
-      ? portfolioItems
-      : portfolioItems.filter((item) => item.category === filter);
+	    ? projects
+	    : projects.filter((p) => p.category === filter);
+
+	// lock body scroll while a modal is open
+	useEffect(() => {
+		const open = active !== null;
+		document.body.style.overflow = open ? "hidden" : "";
+		return () => {
+			document.body.style.overflow = "";
+		};
+	}, [active]);
+
+	const closeAll = useCallback(() => {
+		setLightbox(null);
+		setActive(null);
+	}, []);
+
+	const step = useCallback(
+		(dir: number) => {
+			if (active === null || lightbox === null) return;
+			const n = active.photos.length;
+			setLightbox((i) => (i === null ? null : (i + dir + n) % n));
+		},
+		[active, lightbox]
+	);
+
+	// keyboard navigation
+	useEffect(() => {
+		const onKey = (e: KeyboardEvent) => {
+			if (active === null) return;
+			if (e.key === "Escape") {
+				if (lightbox !== null) setLightbox(null);
+				else setActive(null);
+			} else if (lightbox !== null && e.key === "ArrowRight") step(1);
+			else if (lightbox !== null && e.key === "ArrowLeft") step(-1);
+		};
+		window.addEventListener("keydown", onKey);
+		return () => window.removeEventListener("keydown", onKey);
+	}, [active, lightbox, step]);
 
   return (
     <section
@@ -106,7 +62,7 @@ export default function Portfolio() {
         <SectionHeading
           label="Our Work"
           title="Portfolio"
-          description="A curated collection of our finest work across genres and geographies. Every project is a story waiting to be told."
+          description="Real couples, real celebrations — captured across the mountains of Himachal and beyond. Open any story to see the full gallery."
         />
 
         <AnimatedSection className="flex flex-wrap justify-center gap-4 mb-12">
@@ -127,39 +83,55 @@ export default function Portfolio() {
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <AnimatePresence mode="popLayout">
-            {filtered.map((item) => (
-              <motion.div
-                key={item.title}
+	          {filtered.map((project) => (
+		          <motion.button
+			          key={project.slug}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className={`group relative overflow-hidden cursor-pointer ${item.span}`}
+			          onClick={() => setActive(project)}
+			          className={`group relative overflow-hidden cursor-pointer text-left ${
+				          project.featured
+					          ? "col-span-1 md:col-span-2 row-span-2"
+					          : "col-span-1"
+			          }`}
               >
                 <div className="image-hover-zoom w-full h-full min-h-[300px]">
+	                {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={item.image}
-                    alt={item.title}
+	                  src={project.cover}
+	                  alt={project.name}
+	                  loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+			          <div
+				          className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-500"/>
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <span className="text-[var(--color-accent)] text-[10px] tracking-[0.3em] uppercase">
-                    {item.category}
+			          {project.featured && (
+				          <span
+					          className="absolute top-4 left-4 bg-[var(--color-accent)] text-black text-[10px] tracking-widest uppercase px-3 py-1 font-medium">
+                    Featured
                   </span>
-                  <h3 className="font-[family-name:var(--font-playfair)] text-xl text-white mt-1">
-                    {item.title}
+			          )}
+
+			          <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <span className="text-[var(--color-accent)] text-[10px] tracking-[0.3em] uppercase">
+                    {project.category}
+                  </span>
+				          <h3 className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-white mt-1">
+					          {project.name}
                   </h3>
                   <p className="text-white/50 text-sm mt-1">
-                    {item.location}
+	                  {project.location} · {project.count} photos
                   </p>
                 </div>
 
-                <div className="absolute top-4 right-4 w-10 h-10 border border-white/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-[var(--color-accent)] hover:border-[var(--color-accent)]">
+			          <div
+				          className="absolute top-4 right-4 w-10 h-10 border border-white/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:bg-[var(--color-accent)] group-hover:border-[var(--color-accent)]">
                   <svg
                     className="w-4 h-4 text-white"
                     fill="none"
@@ -174,11 +146,141 @@ export default function Portfolio() {
                     />
                   </svg>
                 </div>
-              </motion.div>
-            ))}
+		          </motion.button>
+	          ))}
           </AnimatePresence>
         </motion.div>
       </div>
+
+	    {/* Project gallery modal */}
+	    <AnimatePresence>
+		    {active && (
+			    <motion.div
+				    initial={{opacity: 0}}
+				    animate={{opacity: 1}}
+				    exit={{opacity: 0}}
+				    className="fixed inset-0 z-50 bg-black/95 overflow-y-auto"
+			    >
+				    <div
+					    className="sticky top-0 z-10 flex items-center justify-between px-6 py-5 bg-black/80 backdrop-blur-sm border-b border-white/10">
+					    <div>
+                <span className="text-[var(--color-accent)] text-[10px] tracking-[0.3em] uppercase">
+                  {active.category}
+                </span>
+						    <h3 className="font-[family-name:var(--font-playfair)] text-2xl text-white">
+							    {active.name}
+						    </h3>
+						    <p className="text-white/40 text-xs mt-0.5">
+							    {active.location} · {active.count} photos
+						    </p>
+					    </div>
+					    <button
+						    onClick={closeAll}
+						    aria-label="Close gallery"
+						    className="w-11 h-11 flex items-center justify-center border border-white/20 text-white hover:bg-[var(--color-accent)] hover:text-black hover:border-[var(--color-accent)] transition-colors"
+					    >
+						    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+							          d="M6 18L18 6M6 6l12 12"/>
+						    </svg>
+					    </button>
+				    </div>
+
+				    <div className="max-w-[1500px] mx-auto p-4 md:p-6">
+					    <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]">
+						    {active.photos.map((photo, i) => (
+							    <button
+								    key={photo.thumb}
+								    onClick={() => setLightbox(i)}
+								    className="mb-3 block w-full overflow-hidden group/th"
+							    >
+								    {/* eslint-disable-next-line @next/next/no-img-element */}
+								    <img
+									    src={photo.thumb}
+									    alt={`${active.name} — photo ${i + 1}`}
+									    loading="lazy"
+									    width={photo.w}
+									    height={photo.h}
+									    className="w-full h-auto transition-transform duration-500 group-hover/th:scale-[1.03]"
+								    />
+							    </button>
+						    ))}
+					    </div>
+				    </div>
+			    </motion.div>
+		    )}
+	    </AnimatePresence>
+
+	    {/* Full-image lightbox */}
+	    <AnimatePresence>
+		    {active && lightbox !== null && (
+			    <motion.div
+				    initial={{opacity: 0}}
+				    animate={{opacity: 1}}
+				    exit={{opacity: 0}}
+				    className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center select-none"
+				    onClick={() => setLightbox(null)}
+			    >
+				    <button
+					    onClick={(e) => {
+						    e.stopPropagation();
+						    setLightbox(null);
+					    }}
+					    aria-label="Close"
+					    className="absolute top-5 right-5 w-11 h-11 flex items-center justify-center border border-white/20 text-white hover:bg-[var(--color-accent)] hover:text-black transition-colors z-10"
+				    >
+					    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+						          d="M6 18L18 6M6 6l12 12"/>
+					    </svg>
+				    </button>
+
+				    <button
+					    onClick={(e) => {
+						    e.stopPropagation();
+						    step(-1);
+					    }}
+					    aria-label="Previous"
+					    className="absolute left-3 md:left-6 w-12 h-12 flex items-center justify-center border border-white/20 text-white hover:bg-[var(--color-accent)] hover:text-black transition-colors"
+				    >
+					    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7"/>
+					    </svg>
+				    </button>
+
+				    <AnimatePresence mode="wait">
+					    <motion.img
+						    key={lightbox}
+						    initial={{opacity: 0}}
+						    animate={{opacity: 1}}
+						    exit={{opacity: 0}}
+						    transition={{duration: 0.2}}
+						    src={active.photos[lightbox].full}
+						    alt={`${active.name} — photo ${lightbox + 1}`}
+						    onClick={(e) => e.stopPropagation()}
+						    className="max-h-[88vh] max-w-[90vw] object-contain"
+					    />
+				    </AnimatePresence>
+
+				    <button
+					    onClick={(e) => {
+						    e.stopPropagation();
+						    step(1);
+					    }}
+					    aria-label="Next"
+					    className="absolute right-3 md:right-6 w-12 h-12 flex items-center justify-center border border-white/20 text-white hover:bg-[var(--color-accent)] hover:text-black transition-colors"
+				    >
+					    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7"/>
+					    </svg>
+				    </button>
+
+				    <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/50 text-xs tracking-widest">
+					    {lightbox + 1} / {active.photos.length}
+				    </div>
+			    </motion.div>
+		    )}
+	    </AnimatePresence>
     </section>
   );
 }

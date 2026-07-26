@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
 export default function CTABanner() {
@@ -9,8 +9,7 @@ export default function CTABanner() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80)",
+	        backgroundImage: "url(/projects/cta.jpg)",
         }}
       />
       <div className="absolute inset-0 bg-black/70" />

@@ -1,32 +1,28 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {useEffect, useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 
 const slides = [
   {
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80",
+	  image: "/projects/hero-1-wedding.jpg",
     title: "Wedding Stories",
-    subtitle: "Where every moment becomes eternal",
+	  subtitle: "Where every vow becomes eternal",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=1920&q=80",
-    title: "Adventure Shoots",
-    subtitle: "Bold landscapes, bolder stories",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1606216794079-73f85bbd57d5?w=1920&q=80",
+	  image: "/projects/hero-2-prewedding.jpg",
     title: "Pre-Wedding",
     subtitle: "The chapter before forever",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80",
-    title: "Real Estate",
-    subtitle: "Spaces that speak volumes",
+	  image: "/projects/hero-3-celebration.jpg",
+	  title: "Celebrations",
+	  subtitle: "Joy, colour, and mountain air",
+  },
+	{
+		image: "/projects/hero-4-romance.jpg",
+		title: "In the Hills",
+		subtitle: "Love, framed by the Himalayas",
   },
 ];
 

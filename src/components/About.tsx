@@ -28,8 +28,8 @@ export default function About() {
             <div className="relative max-w-md mx-auto md:max-w-none">
               <div className="relative overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80"
-                  alt="Abhinav - Founder & Lead Photographer"
+	                src="/projects/about.jpg"
+	                alt="A bridal portrait from a Himachal wedding shot by Abhinav"
                   className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
@@ -51,9 +51,9 @@ export default function About() {
                 </p>
                 <p>
                   Entirely self-taught, I&apos;ve photographed over 500 stories
-                  across more than 20 cities — weddings, pre-weddings, adventures,
-                  and beyond. Every frame is chased with the same obsession for
-                  detail that drew me to this craft in the first place.
+	                across more than 20 cities — weddings, pre-weddings, maternity
+	                shoots, and beyond. Every frame is chased with the same obsession
+	                for detail that drew me to this craft in the first place.
                 </p>
                 <p>
                   That dedication has been recognized nationally: featured on

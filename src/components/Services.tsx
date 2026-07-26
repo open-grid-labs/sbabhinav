@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 
@@ -9,49 +9,29 @@ const services = [
     title: "Wedding Photography",
     description:
       "From sacred ceremonies to joyful celebrations — every emotion, every ritual, beautifully preserved forever.",
-    image:
-      "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80",
+	  image: "/projects/service-wedding.jpg",
     tag: "Most Popular",
   },
   {
     title: "Pre-Wedding Shoots",
     description:
-      "Romantic, cinematic sessions that capture the excitement and intimacy of your journey to the altar.",
-    image:
-      "https://images.unsplash.com/photo-1529636798458-92182e662485?w=800&q=80",
+	    "Romantic, cinematic sessions set against blossoming orchards and Himalayan light — the excitement before forever.",
+	  image: "/projects/service-prewedding.jpg",
     tag: "Trending",
   },
   {
-    title: "Post-Wedding",
+	  title: "Maternity Shoots",
     description:
-      "Relaxed, artistic shoots after the big day — because your love story deserves an encore.",
-    image:
-      "https://images.unsplash.com/photo-1460978812857-470ed1c77af0?w=800&q=80",
+	    "Tender, intimate portraits that celebrate the anticipation and quiet joy of welcoming new life.",
+	  image: "/projects/service-maternity.jpg",
     tag: null,
   },
   {
-    title: "Adventure Shoots",
+	  title: "Mehendi & Haldi",
     description:
-      "Epic mountain tops, ocean cliffs, desert dunes — your love story set against nature's grandest stages.",
-    image:
-      "https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=800&q=80",
-    tag: "Premium",
-  },
-  {
-    title: "Real Estate",
-    description:
-      "Architectural photography that transforms properties into aspirational spaces buyers can't resist.",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    tag: null,
-  },
-  {
-    title: "Cinematic Films",
-    description:
-      "Short films and highlight reels that bring your story to life with Hollywood-grade production.",
-    image:
-      "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80",
-    tag: "New",
+	    "The colour, music and mischief of the pre-wedding rituals — candidly captured as the celebration unfolds.",
+	  image: "/projects/service-mehendi.jpg",
+	  tag: "Vibrant",
   },
 ];
 
@@ -65,7 +45,7 @@ export default function Services() {
           description="Every genre demands its own language. We speak them all fluently — from the grandeur of weddings to the precision of real estate."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
+	      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <AnimatedSection key={service.title} delay={i * 0.1}>
               <motion.div
