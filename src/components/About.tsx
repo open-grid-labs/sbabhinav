@@ -2,6 +2,7 @@
 
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import Picture from "./Picture";
 
 const stats = [
   { number: "6+", label: "Years of Craft" },
@@ -27,9 +28,11 @@ export default function About() {
           <AnimatedSection>
             <div className="relative max-w-md mx-auto md:max-w-none">
               <div className="relative overflow-hidden">
-                <img
-	                src="/projects/about.jpg"
-	                alt="A bridal portrait from a Himachal wedding shot by Abhinav"
+                <Picture
+                  src="/projects/about.jpg"
+                  alt="A bridal portrait from a Himachal wedding shot by Abhinav"
+                  width={1000}
+                  height={1500}
                   className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>

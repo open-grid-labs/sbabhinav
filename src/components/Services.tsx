@@ -3,6 +3,7 @@
 import {motion} from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import Picture from "./Picture";
 
 const services = [
   {
@@ -10,6 +11,8 @@ const services = [
     description:
       "From sacred ceremonies to joyful celebrations — every emotion, every ritual, beautifully preserved forever.",
 	  image: "/projects/service-wedding.jpg",
+	  w: 1100,
+	  h: 1651,
     tag: "Most Popular",
   },
   {
@@ -17,6 +20,8 @@ const services = [
     description:
 	    "Romantic, cinematic sessions set against blossoming orchards and Himalayan light — the excitement before forever.",
 	  image: "/projects/service-prewedding.jpg",
+	  w: 1100,
+	  h: 1650,
     tag: "Trending",
   },
   {
@@ -24,6 +29,8 @@ const services = [
     description:
 	    "Tender, intimate portraits that celebrate the anticipation and quiet joy of welcoming new life.",
 	  image: "/projects/service-maternity.jpg",
+	  w: 1100,
+	  h: 733,
     tag: null,
   },
   {
@@ -31,6 +38,8 @@ const services = [
     description:
 	    "The colour, music and mischief of the pre-wedding rituals — candidly captured as the celebration unfolds.",
 	  image: "/projects/service-mehendi.jpg",
+	  w: 1100,
+	  h: 733,
 	  tag: "Vibrant",
   },
 ];
@@ -54,9 +63,11 @@ export default function Services() {
                 className="group relative overflow-hidden bg-[var(--color-background)] cursor-pointer h-full"
               >
                 <div className="image-hover-zoom aspect-[4/3]">
-                  <img
+                  <Picture
                     src={service.image}
                     alt={service.title}
+                    width={service.w}
+                    height={service.h}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

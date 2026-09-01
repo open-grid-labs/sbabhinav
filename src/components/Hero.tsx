@@ -2,27 +2,36 @@
 
 import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
+import Picture from "./Picture";
 
 const slides = [
   {
 	  image: "/projects/hero-1-wedding.jpg",
     title: "Wedding Stories",
 	  subtitle: "Where every vow becomes eternal",
+	  w: 1920,
+	  h: 1280,
   },
   {
 	  image: "/projects/hero-2-prewedding.jpg",
     title: "Pre-Wedding",
     subtitle: "The chapter before forever",
+	  w: 1920,
+	  h: 1280,
   },
   {
 	  image: "/projects/hero-3-celebration.jpg",
 	  title: "Celebrations",
 	  subtitle: "Joy, colour, and mountain air",
+	  w: 1920,
+	  h: 1280,
   },
 	{
 		image: "/projects/hero-4-romance.jpg",
 		title: "In the Hills",
 		subtitle: "Love, framed by the Himalayas",
+		w: 1280,
+		h: 1600,
   },
 ];
 
@@ -47,9 +56,14 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slides[current].image})` }}
+          <Picture
+            src={slides[current].image}
+            alt={`${slides[current].title} — Stories by Abhinav, wedding photography in Himachal Pradesh`}
+            width={slides[current].w}
+            height={slides[current].h}
+            fetchPriority={current === 0 ? "high" : undefined}
+            loading={current === 0 ? "eager" : "lazy"}
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </motion.div>
       </AnimatePresence>
@@ -69,6 +83,15 @@ export default function Hero() {
         </motion.div>
 
         <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase font-[family-name:var(--font-body)] mb-3"
+        >
+          Wedding Photographer in Himachal Pradesh
+        </motion.h1>
+
+        <motion.p
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -76,7 +99,7 @@ export default function Hero() {
         >
           Stories by{" "}
           <span className="text-gradient italic">Abhinav</span>
-        </motion.h1>
+        </motion.p>
 
         <AnimatePresence mode="wait">
           <motion.p
@@ -98,13 +121,13 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="#portfolio"
+            href="/portfolio/"
             className="px-10 py-4 bg-[var(--color-accent)] text-black text-sm tracking-widest uppercase font-medium hover:bg-[var(--color-accent-light)] transition-all duration-300"
           >
             View Portfolio
           </a>
           <a
-            href="#contact"
+            href="/contact/"
             className="px-10 py-4 border border-white/30 text-white text-sm tracking-widest uppercase hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all duration-300"
           >
             Get in Touch

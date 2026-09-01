@@ -2,15 +2,17 @@
 
 import {motion} from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
+import Picture from "./Picture";
 
 export default function CTABanner() {
   return (
     <section className="relative py-32 px-6 overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{
-	        backgroundImage: "url(/projects/cta.jpg)",
-        }}
+      <Picture
+        src="/projects/cta.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/70" />
 
@@ -29,7 +31,7 @@ export default function CTABanner() {
           Book early to secure your dates.
         </p>
         <motion.a
-          href="#contact"
+          href="/contact/"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="inline-block px-12 py-4 bg-[var(--color-accent)] text-black text-sm tracking-widest uppercase font-medium hover:bg-[var(--color-accent-light)] transition-colors duration-300"

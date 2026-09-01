@@ -4,6 +4,7 @@ import {useCallback, useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import Picture from "./Picture";
 import {categories, type Project, projects} from "@/data/projects";
 
 export default function Portfolio() {
@@ -84,25 +85,31 @@ export default function Portfolio() {
         <motion.div layout className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <AnimatePresence mode="popLayout">
 	          {filtered.map((project) => (
-		          <motion.button
+		          <motion.a
 			          key={project.slug}
+				          href={`/portfolio/${project.slug}/`}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-			          onClick={() => setActive(project)}
-			          className={`group relative overflow-hidden cursor-pointer text-left ${
+			          onClick={(e) => {
+				          if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+				          e.preventDefault();
+				          setActive(project);
+			          }}
+			          className={`group relative overflow-hidden cursor-pointer text-left block ${
 				          project.featured
 					          ? "col-span-1 md:col-span-2 row-span-2"
 					          : "col-span-1"
 			          }`}
               >
                 <div className="image-hover-zoom w-full h-full min-h-[300px]">
-	                {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Picture
 	                  src={project.cover}
 	                  alt={project.name}
+	                  width={project.coverWidth}
+	                  height={project.coverHeight}
 	                  loading="lazy"
                     className="w-full h-full object-cover"
                   />
@@ -146,7 +153,7 @@ export default function Portfolio() {
                     />
                   </svg>
                 </div>
-		          </motion.button>
+		          </motion.a>
 	          ))}
           </AnimatePresence>
         </motion.div>

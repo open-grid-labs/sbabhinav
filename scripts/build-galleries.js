@@ -168,12 +168,13 @@ function listJpgs(dir) {
 
 		// dedicated cover (crop-friendly, medium res) from photos[0]
 		const coverRel = `/projects/${cfg.slug}/cover.jpg`;
-		await sharp(files[0]).rotate().resize(1200, null, {withoutEnlargement: true})
+		const coverInfo = await sharp(files[0]).rotate().resize(1200, null, {withoutEnlargement: true})
 			.jpeg({quality: 80, mozjpeg: true, progressive: true}).toFile(path.join(PUB, cfg.slug, "cover.jpg"));
 
 		projects.push({
 			slug: cfg.slug, name: cfg.name, category: cfg.category, location: cfg.location,
-			featured: cfg.featured, cover: coverRel, count: photos.length, photos
+			featured: cfg.featured, cover: coverRel, coverWidth: coverInfo.width, coverHeight: coverInfo.height,
+			count: photos.length, photos
 		});
 		console.log(`${cfg.slug.padEnd(18)} ${String(photos.length).padStart(3)} photos  ${cfg.featured ? "[featured]" : ""}`);
 	}
@@ -187,6 +188,8 @@ export type Project = {
   location: string;
   featured: boolean;
   cover: string;
+  coverWidth: number;
+  coverHeight: number;
   count: number;
   photos: Photo[];
 };
