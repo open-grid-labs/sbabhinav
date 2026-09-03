@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about/" },
+  { name: "Services", href: "/services/" },
+  { name: "Portfolio", href: "/portfolio/" },
+  { name: "Blog", href: "/blog/" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Contact", href: "/contact/" },
 ];
 
 export default function Navbar() {
@@ -46,7 +47,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <a href="#home" className="group">
+          <a href="/" className="group">
             <span className="font-[family-name:var(--font-playfair)] text-xl tracking-wide">
               <span className="text-[var(--color-accent)]">Stories</span>
               <span className="text-white/60 mx-2 font-light">by</span>
@@ -67,7 +68,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="#contact"
+            href="/contact/"
             className="hidden md:inline-block px-6 py-2.5 border border-[var(--color-accent)] text-[var(--color-accent)] text-xs tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
           >
             Book Now
@@ -121,7 +122,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="#contact"
+                href="/contact/"
                 onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}

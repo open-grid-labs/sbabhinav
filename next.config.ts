@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 // Deployed to GitHub Pages on the custom domain https://sbabhinav.com
 // (see public/CNAME). A custom domain serves from the ROOT, so NO basePath is
@@ -12,6 +13,10 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   // Emit /path/index.html so Pages serves routes without a server.
   trailingSlash: true,
+  // Allow .mdx blog content under src/content/blog to be imported as pages.
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);

@@ -4,21 +4,30 @@ const footerLinks = [
   {
     title: "Services",
     links: [
-      "Wedding Photography",
-      "Pre-Wedding Shoots",
-      "Adventure Photography",
-      "Real Estate",
-      "Cinematic Films",
-      "Portrait Sessions",
+      { name: "Wedding Photography", href: "/services/wedding-photography/" },
+      { name: "Pre-Wedding Shoots", href: "/services/pre-wedding-shoot/" },
+      { name: "Maternity Shoots", href: "/services/maternity-photoshoot/" },
+      {
+        name: "Mehendi & Haldi",
+        href: "/services/mehendi-haldi-photography/",
+      },
     ],
   },
   {
     title: "Company",
-    links: ["About Us", "Portfolio", "Testimonials", "Blog", "Careers"],
+    links: [
+      { name: "About Us", href: "/about/" },
+      { name: "Portfolio", href: "/portfolio/" },
+      { name: "Blog", href: "/blog/" },
+      { name: "Testimonials", href: "/#testimonials" },
+    ],
   },
   {
     title: "Support",
-    links: ["Contact Us", "FAQ", "Pricing", "Privacy Policy", "Terms"],
+    links: [
+      { name: "Contact Us", href: "/contact/" },
+      { name: "Wedding Photographer in Manali", href: "/wedding-photographer-manali/" },
+    ],
   },
 ];
 
@@ -39,6 +48,23 @@ export default function Footer() {
                 photography and cinematic films for life&apos;s most
                 extraordinary moments.
               </p>
+              <address className="not-italic text-white/40 text-sm leading-relaxed mt-4 space-y-1">
+                <a
+                  href="tel:+918261814200"
+                  className="block hover:text-[var(--color-accent)] transition-colors duration-300"
+                >
+                  +91 82618 14200
+                </a>
+                <a
+                  href="mailto:abhinavmec47@gmail.com"
+                  className="block hover:text-[var(--color-accent)] transition-colors duration-300"
+                >
+                  abhinavmec47@gmail.com
+                </a>
+                <span className="block">
+                  Sundarnagar, Himachal Pradesh, India
+                </span>
+              </address>
             </div>
 
             {footerLinks.map((group) => (
@@ -48,12 +74,12 @@ export default function Footer() {
                 </h4>
                 <ul className="space-y-2">
                   {group.links.map((link) => (
-                    <li key={link}>
+                    <li key={link.name}>
                       <a
-                        href="#"
+                        href={link.href}
                         className="text-white/40 text-sm hover:text-[var(--color-accent)] transition-colors duration-300"
                       >
-                        {link}
+                        {link.name}
                       </a>
                     </li>
                   ))}
