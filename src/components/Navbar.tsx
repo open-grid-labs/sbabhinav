@@ -2,19 +2,23 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about/" },
+  { name: "Services", href: "/services/" },
+  { name: "Portfolio", href: "/portfolio/" },
+  { name: "Blog", href: "/blog/" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Contact", href: "/contact/" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -33,6 +37,14 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    if (href.startsWith("/#")) return false;
+    const normalizedHref = href.replace(/\/$/, "");
+    const normalizedPathname = pathname.replace(/\/$/, "");
+    return normalizedPathname.startsWith(normalizedHref);
+  };
+
   return (
     <>
       <motion.nav
@@ -46,32 +58,39 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <a href="#home" className="group">
+          <Link href="/" className="group">
             <span className="font-[family-name:var(--font-playfair)] text-xl tracking-wide">
               <span className="text-[var(--color-accent)]">Stories</span>
               <span className="text-white/60 mx-2 font-light">by</span>
               <span className="text-white">Abhinav</span>
             </span>
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-sm tracking-widest uppercase text-white/60 hover:text-[var(--color-accent)] transition-colors duration-300"
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`text-sm tracking-widest uppercase transition-colors duration-300 ${
+                    active
+                      ? "text-[var(--color-accent)] font-medium"
+                      : "text-white/60 hover:text-[var(--color-accent)]"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact/"
             className="hidden md:inline-block px-6 py-2.5 border border-[var(--color-accent)] text-[var(--color-accent)] text-xs tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
           >
             Book Now
-          </a>
+          </Link>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -107,29 +126,42 @@ export default function Navbar() {
             className="fixed inset-0 z-40 bg-[#0a0a0a]/98 backdrop-blur-2xl md:hidden flex flex-col items-center justify-center"
           >
             <div className="flex flex-col items-center gap-8">
-              {navLinks.map((link, i) => (
-                <motion.a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 }}
-                  className="font-[family-name:var(--font-playfair)] text-3xl text-white/80 hover:text-[var(--color-accent)] transition-colors"
-                >
-                  {link.name}
-                </motion.a>
-              ))}
-              <motion.a
-                href="#contact"
-                onClick={() => setMobileOpen(false)}
+              {navLinks.map((link, i) => {
+                const active = isActive(link.href);
+                return (
+                  <motion.div
+                    key={link.name}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.08 }}
+                  >
+                    <Link
+                      href={link.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`font-[family-name:var(--font-playfair)] text-3xl transition-colors ${
+                        active
+                          ? "text-[var(--color-accent)]"
+                          : "text-white/80 hover:text-[var(--color-accent)]"
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
+                );
+              })}
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.08 }}
-                className="mt-4 px-8 py-3 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
               >
-                Book Now
-              </motion.a>
+                <Link
+                  href="/contact/"
+                  onClick={() => setMobileOpen(false)}
+                  className="mt-4 inline-block px-8 py-3 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
+                >
+                  Book Now
+                </Link>
+              </motion.div>
             </div>
           </motion.div>
         )}

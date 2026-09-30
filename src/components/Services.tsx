@@ -3,37 +3,7 @@
 import {motion} from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
-
-const services = [
-  {
-    title: "Wedding Photography",
-    description:
-      "From sacred ceremonies to joyful celebrations — every emotion, every ritual, beautifully preserved forever.",
-	  image: "/projects/service-wedding.jpg",
-    tag: "Most Popular",
-  },
-  {
-    title: "Pre-Wedding Shoots",
-    description:
-	    "Romantic, cinematic sessions set against blossoming orchards and Himalayan light — the excitement before forever.",
-	  image: "/projects/service-prewedding.jpg",
-    tag: "Trending",
-  },
-  {
-	  title: "Maternity Shoots",
-    description:
-	    "Tender, intimate portraits that celebrate the anticipation and quiet joy of welcoming new life.",
-	  image: "/projects/service-maternity.jpg",
-    tag: null,
-  },
-  {
-	  title: "Mehendi & Haldi",
-    description:
-	    "The colour, music and mischief of the pre-wedding rituals — candidly captured as the celebration unfolds.",
-	  image: "/projects/service-mehendi.jpg",
-	  tag: "Vibrant",
-  },
-];
+import { services } from "@/data/services";
 
 export default function Services() {
   return (
@@ -41,30 +11,33 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
           label="What We Do"
-          title="Our Craft"
+          title="Our Services"
           description="Every genre demands its own language. We speak them all fluently — from the grandeur of weddings to the precision of real estate."
         />
 
 	      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <AnimatedSection key={service.title} delay={i * 0.1}>
-              <motion.div
+              <motion.a
+                href={`/services/${service.slug}/`}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
                 className="group relative overflow-hidden bg-[var(--color-background)] cursor-pointer h-full"
               >
                 <div className="image-hover-zoom aspect-[4/3]">
                   <img
-                    src={service.image}
+                    src={service.heroImage}
                     alt={service.title}
+                    width={service.heroImageWidth}
+                    height={service.heroImageHeight}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
 
-                {service.tag && (
+                {service.category && (
                   <span className="absolute top-4 right-4 bg-[var(--color-accent)] text-black text-[10px] tracking-widest uppercase px-3 py-1 font-medium">
-                    {service.tag}
+                    {service.category}
                   </span>
                 )}
 
@@ -73,7 +46,7 @@ export default function Services() {
                     {service.title}
                   </h3>
                   <p className="text-white/50 text-sm leading-relaxed line-clamp-3 group-hover:text-white/70 transition-colors duration-300">
-                    {service.description}
+                    {service.shortDescription}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-[var(--color-accent)] text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                     <span>Learn More</span>
@@ -92,7 +65,7 @@ export default function Services() {
                     </svg>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             </AnimatedSection>
           ))}
         </div>
