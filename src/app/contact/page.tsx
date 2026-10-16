@@ -16,7 +16,7 @@ export default function ContactPage() {
     <main>
       <Navbar />
       <div className="h-24 bg-[var(--color-background)]" />
-      <Contact />
+      <Contact headingAs="h1" />
       <Footer />
     </main>
   );

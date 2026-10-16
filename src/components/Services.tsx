@@ -5,11 +5,16 @@ import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 import { services } from "@/data/services";
 
-export default function Services() {
+export default function Services({
+  headingAs = "h2",
+}: {
+  headingAs?: "h1" | "h2";
+}) {
   return (
     <section id="services" className="py-24 md:py-32 bg-[var(--color-surface)]">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeading
+          as={headingAs}
           label="What We Do"
           title="Our Services"
           description="Every genre demands its own language. We speak them all fluently — from the grandeur of weddings to the precision of real estate."

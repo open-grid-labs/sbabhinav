@@ -35,7 +35,11 @@ const emptyForm = {
   message: "",
 };
 
-export default function Contact() {
+export default function Contact({
+  headingAs = "h2",
+}: {
+  headingAs?: "h1" | "h2";
+}) {
   const [formData, setFormData] = useState(emptyForm);
   const [status, setStatus] = useState<Status>("idle");
 
@@ -93,6 +97,7 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <SectionHeading
+          as={headingAs}
           label="Let's Create Together"
           title="Get in Touch"
           description="Ready to tell your story? Fill out the form below and let's start planning something extraordinary."
