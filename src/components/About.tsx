@@ -10,7 +10,11 @@ const stats = [
   { number: "20+", label: "Team Members" },
 ];
 
-export default function About() {
+export default function About({
+  headingAs = "h2",
+}: {
+  headingAs?: "h1" | "h2";
+}) {
   return (
     <section
       id="about"
@@ -18,6 +22,7 @@ export default function About() {
     >
       <div className="max-w-7xl mx-auto">
         <SectionHeading
+          as={headingAs}
           label="The Artist Behind the Lens"
           title="Meet Abhinav"
           description="A mechanical engineer by degree, a storyteller by calling — Abhinav turned a college hobby into one of the country's most trusted photography studios."

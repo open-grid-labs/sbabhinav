@@ -16,7 +16,7 @@ export default function AboutPage() {
     <main>
       <Navbar />
       <div className="h-24 bg-[var(--color-background)]" />
-      <About />
+      <About headingAs="h1" />
       <Footer />
     </main>
   );

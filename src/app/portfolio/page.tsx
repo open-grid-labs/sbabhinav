@@ -16,7 +16,7 @@ export default function PortfolioPage() {
     <main>
       <Navbar />
       <div className="h-24 bg-[var(--color-background)]" />
-      <Portfolio />
+      <Portfolio headingAs="h1" />
       <Footer />
     </main>
   );

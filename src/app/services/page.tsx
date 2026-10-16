@@ -15,7 +15,7 @@ export default function ServicesPage() {
   return (
     <main>
       <Navbar />
-      <Services />
+      <Services headingAs="h1" />
       <Footer />
     </main>
   );

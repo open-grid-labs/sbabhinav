@@ -19,8 +19,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sbabhinav.com"),
   title: "Stories by Abhinav | Wedding Photography in Himachal Pradesh",
   description:
-    "Capturing life's most extraordinary moments — weddings, adventures, real estate, and beyond. Premium photography services available worldwide.",
+    "Award-winning wedding photographer based in Sundarnagar, Himachal Pradesh. Weddings, pre-wedding shoots in Manali and Shimla, and cinematic films — available across India.",
   keywords: [
+    "wedding photographer Himachal Pradesh",
+    "wedding photographer Manali",
+    "pre-wedding shoot Manali",
+    "wedding photographer Sundarnagar",
     "wedding photography",
     "adventure photography",
     "pre-wedding shoot",

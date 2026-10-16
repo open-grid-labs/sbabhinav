@@ -7,7 +7,11 @@ import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
 import { categories, projects } from "@/data/projects";
 
-export default function Portfolio() {
+export default function Portfolio({
+  headingAs = "h2",
+}: {
+  headingAs?: "h1" | "h2";
+}) {
   const [filter, setFilter] = useState<string>("All");
 
   const filtered =
@@ -22,6 +26,7 @@ export default function Portfolio() {
     >
       <div className="max-w-[1400px] mx-auto px-6">
         <SectionHeading
+          as={headingAs}
           label="Our Work"
           title="Portfolio"
           description="Real couples, real celebrations — captured across the mountains of Himachal and beyond. Open any story to see the full gallery."
