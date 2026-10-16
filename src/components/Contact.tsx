@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import { CLIENT_REVIEW_FORM_URL } from "@/constants/links";
 
 const shootTypes = [
   "Wedding Photography",
@@ -360,6 +361,37 @@ export default function Contact() {
                   className="inline-flex items-center gap-2 text-[var(--color-accent)] text-sm tracking-widest uppercase hover:gap-3 transition-all duration-300"
                 >
                   View Profile
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div className="p-6 border border-white/10">
+                <h3 className="font-[family-name:var(--font-playfair)] text-lg text-white mb-2">
+                  Worked With Us?
+                </h3>
+                <p className="text-white/50 text-sm leading-relaxed mb-4">
+                  We&apos;d love to hear about your experience. Your feedback
+                  helps us grow and helps future couples choose with confidence.
+                </p>
+                <a
+                  href={CLIENT_REVIEW_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[var(--color-accent)] text-sm tracking-widest uppercase hover:gap-3 transition-all duration-300"
+                >
+                  Leave a Review
                   <svg
                     className="w-4 h-4"
                     fill="none"
