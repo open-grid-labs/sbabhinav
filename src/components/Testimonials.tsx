@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import { CLIENT_REVIEW_FORM_URL } from "@/constants/links";
 
 const testimonials = [
   {
@@ -156,6 +157,17 @@ export default function Testimonials() {
                   />
                 </svg>
               </button>
+            </div>
+
+            <div className="text-center mt-12">
+              <a
+                href={CLIENT_REVIEW_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-10 py-3 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
+              >
+                Leave a Review
+              </a>
             </div>
           </div>
         </AnimatedSection>
