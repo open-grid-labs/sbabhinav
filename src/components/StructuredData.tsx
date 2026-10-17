@@ -22,7 +22,7 @@ const localBusiness = {
   ],
   sameAs: [
     "https://www.instagram.com/s.b.abhinav",
-    "https://www.wedmegood.com/profile/the-ruby-studio--25965298",
+    "https://www.wedmegood.com/profile/Stories-by-Abhinav-25965298",
   ],
 };
 

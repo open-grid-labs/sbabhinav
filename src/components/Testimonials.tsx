@@ -4,42 +4,107 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
-import { CLIENT_REVIEW_FORM_URL } from "@/constants/links";
+import ReviewLinks from "./ReviewLinks";
 
 const testimonials = [
   {
-    name: "Priya & Arjun",
-    event: "Destination Wedding",
-    location: "Udaipur, India",
-    text: "Abhinav didn't just photograph our wedding — he felt it. Every frame captures an emotion we didn't even know was there. Looking at our album feels like reliving the most magical day of our lives.",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    name: "Hitakshi Sharma",
+    event: "Wedding Photography",
+    rating: 5,
+    text: "Our wedding photos turned out stunning. Thank you for capturing our happiest moments thnqq soo much ♥️♥️",
   },
   {
-    name: "Sarah & James",
-    event: "Adventure Shoot",
-    location: "Swiss Alps",
-    text: "We flew Abhinav to Switzerland for our engagement shoot and it was the best decision we ever made. He captured the scale of the mountains and the intimacy of our love in the same frame. Pure magic.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+    name: "Vikram Singh",
+    event: "Wedding & Drone Photography",
+    rating: 5,
+    text: "I am beyond happy with how beautifully my entire wedding was captured. The Drone Photography added such a breathtaking and cinematic touch to my special day. Seeing the venue, the decorations, and my bridal entry from those stunning aerial angles truly made me emotional. It felt like watching a scene from a movie grand, magical, and full of life.",
   },
   {
-    name: "Meera & Rohan",
-    event: "Pre-Wedding Film",
-    location: "Santorini, Greece",
-    text: "The cinematic film Abhinav created for us has been watched over 100,000 times online. Friends, family, even strangers write to us saying it made them cry. That's his gift — making people feel.",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+    name: "Sneha Agarwal",
+    event: "Wedding Film & Live Streaming",
+    rating: 4.5,
+    text: "Choosing you for our Wedding Films and live streaming was the best decision we made. You captured every moment with so much elegance and clarity. My family members who couldn’t attend felt like they were right there with us, thanks to the smooth, high–quality live stream.",
   },
   {
-    name: "The Oberoi Group",
-    event: "Real Estate Portfolio",
-    location: "Pan-India",
-    text: "Abhinav's architectural photography elevated our entire property portfolio. His understanding of light, space, and luxury is unmatched. We've seen a measurable increase in enquiries since updating our visuals.",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80",
+    name: "Divya Rao",
+    event: "Wedding Film & Live Streaming",
+    rating: 5,
+    text: "I absolutely loved my Wedding Films, and the live streaming service was exceptional. It felt so effortless and perfectly handled — everyone watching from home kept telling me how beautiful and seamless everything looked.",
+  },
+  {
+    name: "Dr Shagun",
+    event: "Wedding Photography & Films",
+    rating: 5,
+    text: "We had a wonderful experience working with Abhinav and his team. Abhinav is extremely generous and approachable, and his entire team was very cooperative and professional throughout the wedding functions. The quality of the photos and videos is truly outstanding.",
+  },
+  {
+    name: "Adiya Singh",
+    event: "Family Birthday Shoot",
+    rating: 5,
+    text: "Maine recently Ruby Studio se ek photo shoot karwaya tha family ke birthday party occasion pe. Work genuinely expectations se zyada accha tha, but sabse zyada jo cheez pasand aayi wo inka behavior tha clients ke saath. Meri family thodi shy hai camera ke saamne, lekin inka style itna friendly hai ki sabki shyness khatam ho gayi.",
+  },
+  {
+    name: "Neeraj Rana",
+    event: "Family Photoshoot",
+    rating: 4,
+    text: "My family and I recently had the incredible opportunity to get a family photoshoot done at The Ruby Studio in Sundernagar, and the experience was truly exceptional. This wasn't just any regular photoshoot for us; it was a milestone, a way to capture a new chapter in our lives as my father enters his well-deserved retirement.",
+  },
+  {
+    name: "Sheetal",
+    event: "Wedding Photography",
+    rating: 5,
+    text: "It is a huge chaos to choose a good photographer for your perfect day. Then I got through Ruby Studio and it was one of the best decisions. Special mention to Abhinav Dhiman and his team. They worked so hard to get every picture perfect. Entire team was polite, friendly and full of patience and very skillful.",
   },
 ];
+
+const initials = (name: string) =>
+  name
+    .replace(/^Dr\.?\s+/i, "")
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase();
+
+const STAR_PATH =
+  "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z";
+
+function Stars({ rating }: { rating: number }) {
+  return (
+    <div
+      className="flex justify-center gap-1 mb-6"
+      role="img"
+      aria-label={`Rated ${rating} out of 5`}
+    >
+      {[0, 1, 2, 3, 4].map((i) => {
+        const fill = Math.max(0, Math.min(1, rating - i));
+        return (
+          <span key={i} className="relative w-4 h-4">
+            <svg
+              className="absolute inset-0 w-4 h-4 text-white/15"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d={STAR_PATH} />
+            </svg>
+            <span
+              className="absolute inset-0 overflow-hidden"
+              style={{ width: `${fill * 100}%` }}
+            >
+              <svg
+                className="w-4 h-4 text-[var(--color-accent)]"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d={STAR_PATH} />
+              </svg>
+            </span>
+          </span>
+        );
+      })}
+    </div>
+  );
+}
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
@@ -77,25 +142,24 @@ export default function Testimonials() {
                 transition={{ duration: 0.5 }}
                 className="text-center"
               >
-                <p className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-white/80 leading-relaxed italic mb-10">
+                <Stars rating={testimonials[current].rating} />
+                <p className="font-[family-name:var(--font-playfair)] text-lg md:text-xl text-white/80 leading-relaxed italic mb-10">
                   &ldquo;{testimonials[current].text}&rdquo;
                 </p>
 
                 <div className="flex items-center justify-center gap-4">
-                  <img
-                    src={testimonials[current].image}
-                    alt={testimonials[current].name}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-[var(--color-accent)]/30"
-                  />
+                  <div
+                    aria-hidden="true"
+                    className="w-14 h-14 rounded-full flex items-center justify-center border-2 border-[var(--color-accent)]/30 bg-[var(--color-accent)]/10 text-[var(--color-accent)] font-[family-name:var(--font-playfair)] text-lg"
+                  >
+                    {initials(testimonials[current].name)}
+                  </div>
                   <div className="text-left">
                     <div className="text-white font-medium">
                       {testimonials[current].name}
                     </div>
                     <div className="text-[var(--color-accent)] text-sm">
                       {testimonials[current].event}
-                    </div>
-                    <div className="text-white/40 text-xs">
-                      {testimonials[current].location}
                     </div>
                   </div>
                 </div>
@@ -159,15 +223,15 @@ export default function Testimonials() {
               </button>
             </div>
 
-            <div className="text-center mt-12">
-              <a
-                href={CLIENT_REVIEW_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-10 py-3 border border-[var(--color-accent)] text-[var(--color-accent)] text-sm tracking-widest uppercase hover:bg-[var(--color-accent)] hover:text-black transition-all duration-300"
-              >
-                Leave a Review
-              </a>
+            <div className="mt-16 pt-12 border-t border-white/10 text-center">
+              <h3 className="font-[family-name:var(--font-playfair)] text-2xl text-white mb-2">
+                Celebrated with us?
+              </h3>
+              <p className="text-white/50 text-sm mb-8 max-w-md mx-auto">
+                A few words from you help future couples choose with
+                confidence. It only takes a minute.
+              </p>
+              <ReviewLinks />
             </div>
           </div>
         </AnimatedSection>
