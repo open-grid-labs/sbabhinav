@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
+import { CONTACT_EMAIL } from "@/constants/contact";
 import { WEDMEGOOD_PROFILE_URL } from "@/constants/links";
 import ReviewLinks from "./ReviewLinks";
 
@@ -19,7 +20,7 @@ const shootTypes = [
   "Other",
 ];
 
-// Formspree endpoint — delivers contact form submissions to abhinavmec47@gmail.com.
+// Formspree endpoint — delivers contact form submissions to the inbox configured in Formspree.
 // The form ID is public (it ships in the client bundle either way), so it lives
 // here directly. To change it, create a form at https://formspree.io and swap the ID.
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeeddaor";
@@ -242,10 +243,10 @@ export default function Contact({
                   <p className="text-red-400 text-sm">
                     Something went wrong. Please email us directly at{" "}
                     <a
-                      href="mailto:abhinavmec47@gmail.com"
+                      href={`mailto:${CONTACT_EMAIL}`}
                       className="underline hover:text-red-300"
                     >
-                      abhinavmec47@gmail.com
+                      {CONTACT_EMAIL}
                     </a>
                     .
                   </p>
@@ -262,7 +263,7 @@ export default function Contact({
                 </h3>
                 <div className="space-y-4 text-white/50">
                   <a
-                    href="mailto:abhinavmec47@gmail.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="flex items-center justify-center md:justify-start gap-3 hover:text-[var(--color-accent)] transition-colors"
                   >
                     <svg
@@ -278,7 +279,7 @@ export default function Contact({
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    abhinavmec47@gmail.com
+                    {CONTACT_EMAIL}
                   </a>
                   <a
                     href="tel:+918261814200"

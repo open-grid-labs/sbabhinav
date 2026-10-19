@@ -1,3 +1,5 @@
+import { CONTACT_EMAIL } from "@/constants/contact";
+
 const BASE = "https://sbabhinav.com";
 
 const localBusiness = {
@@ -8,7 +10,7 @@ const localBusiness = {
   image: `${BASE}/og.jpg`,
   url: BASE,
   telephone: "+918261814200",
-  email: "abhinavmec47@gmail.com",
+  email: CONTACT_EMAIL,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Sundarnagar",
