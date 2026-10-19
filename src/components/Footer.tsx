@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/constants/contact";
 import AnimatedSection from "./AnimatedSection";
 
 const footerLinks = [
@@ -56,10 +57,10 @@ export default function Footer() {
                   +91 82618 14200
                 </a>
                 <a
-                  href="mailto:abhinavmec47@gmail.com"
+                  href={`mailto:${CONTACT_EMAIL}`}
                   className="block hover:text-[var(--color-accent)] transition-colors duration-300"
                 >
-                  abhinavmec47@gmail.com
+                  {CONTACT_EMAIL}
                 </a>
                 <span className="block">
                   Sundarnagar, Himachal Pradesh, India
