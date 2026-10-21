@@ -1,5 +1,6 @@
 import { CONTACT_EMAIL } from "@/constants/contact";
 import AnimatedSection from "./AnimatedSection";
+import Logo from "./Logo";
 
 const footerLinks = [
   {
@@ -39,11 +40,7 @@ export default function Footer() {
         <AnimatedSection>
           <div className="grid md:grid-cols-4 gap-12 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start">
-              <span className="font-[family-name:var(--font-playfair)] text-xl">
-                <span className="text-[var(--color-accent)]">Stories</span>
-                <span className="text-white/60 mx-2 font-light">by</span>
-                <span className="text-white">Abhinav</span>
-              </span>
+              <Logo />
               <p className="text-white/40 text-sm leading-relaxed mt-4">
                 Crafting visual narratives that transcend time. Premium
                 photography and cinematic films for life&apos;s most

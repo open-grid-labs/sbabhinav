@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -58,12 +59,8 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <Link href="/" className="group">
-            <span className="font-[family-name:var(--font-playfair)] text-xl tracking-wide">
-              <span className="text-[var(--color-accent)]">Stories</span>
-              <span className="text-white/60 mx-2 font-light">by</span>
-              <span className="text-white">Abhinav</span>
-            </span>
+          <Link href="/" className="group" aria-label="Stories by Abhinav — Home">
+            <Logo />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
