@@ -321,7 +321,7 @@ export default function Contact({
                       />
                     </svg>
                     <span>
-                      Sundernagar, Himachal Pradesh, India
+                      Sundarnagar, Himachal Pradesh, India
                       <br />
                       Available Worldwide
                     </span>

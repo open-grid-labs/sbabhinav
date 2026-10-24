@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { blogPosts } from "@/data/blog";
-import { locations } from "@/data/locations";
 
 export const dynamic = "force-static";
 
@@ -25,11 +24,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly" as const,
       priority: 0.7,
     })),
-    ...locations.map((l) => ({
-      url: `${BASE}/${l.slug}/`,
-      changeFrequency: "monthly" as const,
+    {
+      url: `${BASE}/wedding-photographer-manali/`,
+      changeFrequency: "monthly",
       priority: 0.7,
-    })),
+    },
     { url: `${BASE}/blog/`, changeFrequency: "weekly", priority: 0.7 },
     ...blogPosts.map((p) => ({
       url: `${BASE}/blog/${p.slug}/`,
