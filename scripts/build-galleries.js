@@ -20,7 +20,7 @@ const CFG = [
 		slug: "amit-anuj",
 		name: "Amit & Anuj",
 		category: "Mehendi & Haldi",
-		location: "Himachal Pradesh",
+		location: "Dharamshala, Himachal Pradesh",
 		cover: "_Q5A3810.jpg",
 		featured: true
 	},
@@ -47,7 +47,7 @@ const CFG = [
 		slug: "pratiksha-sayam",
 		name: "Pratiksha & Sayam",
 		category: "Wedding",
-		location: "Himachal Pradesh",
+		location: "Shimla, Himachal Pradesh",
 		cover: "DSC01357.jpg",
 		featured: false
 	},
@@ -56,7 +56,7 @@ const CFG = [
 		slug: "yogesh-shivani",
 		name: "Yogesh & Shivani",
 		category: "Pre-Wedding",
-		location: "Himachal Pradesh",
+		location: "Mandi, Himachal Pradesh",
 		cover: "DSC06421.jpg",
 		featured: false
 	},
@@ -65,7 +65,7 @@ const CFG = [
 		slug: "aashima-chandel",
 		name: "Aashima Chandel",
 		category: "Wedding",
-		location: "Himachal Pradesh",
+		location: "Mandi, Himachal Pradesh",
 		cover: "RUV00280.jpg",
 		featured: false
 	},
@@ -74,7 +74,7 @@ const CFG = [
 		slug: "neeraj-shagun",
 		name: "Neeraj & Shagun",
 		category: "Wedding",
-		location: "Himachal Pradesh",
+		location: "Mandi, Himachal Pradesh",
 		cover: "RUV01428.jpg",
 		featured: false
 	},
@@ -83,7 +83,7 @@ const CFG = [
 		slug: "neha-maternity",
 		name: "Neha — Maternity",
 		category: "Maternity",
-		location: "Studio Session",
+		location: "Shimla, Himachal Pradesh",
 		cover: "RUV00061.jpg",
 		featured: false
 	},
@@ -92,7 +92,7 @@ const CFG = [
 		slug: "vipasha-nikhil",
 		name: "Vipasha & Nikhil",
 		category: "Pre-Wedding",
-		location: "Himachal Pradesh",
+		location: "Shimla, Himachal Pradesh",
 		cover: "DSC01200.jpg",
 		featured: false
 	},
@@ -101,7 +101,7 @@ const CFG = [
 		slug: "hitakshi",
 		name: "Hitakshi",
 		category: "Wedding",
-		location: "Himachal Pradesh",
+		location: "Mandi, Himachal Pradesh",
 		cover: null,
 		featured: false
 	},
@@ -110,7 +110,7 @@ const CFG = [
 		slug: "nishant-rashmi",
 		name: "Nishant & Rashmi",
 		category: "Wedding",
-		location: "Himachal Pradesh",
+		location: "Mandi, Himachal Pradesh",
 		cover: null,
 		featured: false
 	},
