@@ -1,5 +1,4 @@
 import { CONTACT_EMAIL } from "@/constants/contact";
-import { locations } from "@/data/locations";
 
 const BASE = "https://sbabhinav.com";
 
@@ -14,16 +13,14 @@ const localBusiness = {
   email: CONTACT_EMAIL,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Sundernagar",
+    addressLocality: "Sundarnagar",
     addressRegion: "Himachal Pradesh",
     addressCountry: "IN",
   },
   areaServed: [
     { "@type": "State", name: "Himachal Pradesh" },
-    { "@type": "City", name: "Sundernagar" }, // home base; no page of its own yet
-    ...locations
-      .filter((l) => l.group === "city")
-      .map((l) => ({ "@type": "City", name: l.label })),
+    { "@type": "City", name: "Manali" },
+    { "@type": "City", name: "Sundarnagar" },
   ],
   sameAs: [
     "https://www.instagram.com/s.b.abhinav",

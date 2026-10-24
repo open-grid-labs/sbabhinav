@@ -1,5 +1,4 @@
 import { CONTACT_EMAIL } from "@/constants/contact";
-import { locations } from "@/data/locations";
 import AnimatedSection from "./AnimatedSection";
 import Logo from "./Logo";
 
@@ -23,14 +22,14 @@ const footerLinks = [
       { name: "Portfolio", href: "/portfolio/" },
       { name: "Blog", href: "/blog/" },
       { name: "Testimonials", href: "/#testimonials" },
-      { name: "Contact Us", href: "/contact/" },
     ],
   },
   {
-    title: "Locations",
-    links: locations
-      .filter((l) => l.group !== "pre-wedding")
-      .map((l) => ({ name: l.label, href: `/${l.slug}/` })),
+    title: "Support",
+    links: [
+      { name: "Contact Us", href: "/contact/" },
+      { name: "Wedding Photographer in Manali", href: "/wedding-photographer-manali/" },
+    ],
   },
 ];
 
@@ -61,7 +60,7 @@ export default function Footer() {
                   {CONTACT_EMAIL}
                 </a>
                 <span className="block">
-                  Sundernagar, Himachal Pradesh, India
+                  Sundarnagar, Himachal Pradesh, India
                 </span>
               </address>
             </div>
