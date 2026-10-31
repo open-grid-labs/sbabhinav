@@ -3,8 +3,17 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProcessSection from "@/components/ProcessSection";
+import FAQSection from "@/components/FAQSection";
+import FilmGrid from "@/components/FilmGrid";
+import { films } from "@/data/films";
+import PageSections, {
+  BookingCTA,
+  RelatedLinks,
+} from "@/components/PageSections";
 import { services } from "@/data/services";
 import { projects } from "@/data/projects";
+
+const BASE = "https://sbabhinav.com";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -18,12 +27,18 @@ export async function generateMetadata({
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
+  const title =
+    service.metaTitle ??
+    `${service.title} in Himachal Pradesh | Stories by Abhinav`;
+  const description = service.metaDescription ?? service.shortDescription;
   return {
-    title: `${service.title} in Himachal Pradesh | Stories by Abhinav`,
-    description: service.shortDescription,
+    title,
+    description,
     alternates: { canonical: `/services/${service.slug}/` },
     openGraph: {
-      url: `https://sbabhinav.com/services/${service.slug}/`,
+      title,
+      description,
+      url: `${BASE}/services/${service.slug}/`,
       images: [service.heroImage],
     },
   };
@@ -38,12 +53,32 @@ export default async function ServicePage({
   const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
 
-  const related = projects
-    .filter((p) => p.category === service.category)
-    .slice(0, 3);
+  const related = (
+    service.relatedProjects
+      ? projects.filter((p) => service.relatedProjects!.includes(p.slug))
+      : projects.filter((p) => p.category === service.category)
+  ).slice(0, 3);
+  const contactHref = service.contactType
+    ? `/contact/?type=${encodeURIComponent(service.contactType)}`
+    : "/contact/";
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.heading ?? service.title,
+    serviceType: service.title,
+    description: service.metaDescription ?? service.shortDescription,
+    url: `${BASE}/services/${service.slug}/`,
+    provider: { "@id": `${BASE}/#business` },
+    areaServed: { "@type": "State", name: "Himachal Pradesh" },
+  };
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Navbar />
       <section className="relative pt-40 pb-16 px-6 bg-[var(--color-background)]">
         <div className="max-w-4xl mx-auto text-center">
@@ -51,10 +86,10 @@ export default async function ServicePage({
             Photography Service
           </span>
           <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white mt-4 mb-6">
-            {service.title}
+            {service.heading ?? service.title}
           </h1>
           <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed">
-            {service.shortDescription}
+            {service.intro ?? service.shortDescription}
           </p>
         </div>
       </section>
@@ -64,7 +99,7 @@ export default async function ServicePage({
           <div className="image-hover-zoom w-full h-full min-h-[300px] mb-12">
             <img
               src={service.heroImage}
-              alt={service.title}
+              alt={service.heroAlt ?? service.title}
               width={service.heroImageWidth}
               height={service.heroImageHeight}
               loading="eager"
@@ -88,13 +123,21 @@ export default async function ServicePage({
           </ul>
 
           <a
-            href="/contact/"
+            href={contactHref}
             className="inline-block px-10 py-4 bg-[var(--color-accent)] text-black text-sm tracking-widest uppercase font-medium hover:bg-[var(--color-accent-light)] transition-all duration-300"
           >
             Enquire About {service.title}
           </a>
+
+          {service.sections && <PageSections sections={service.sections} />}
         </div>
       </section>
+
+      {service.showFilms && (
+        <FilmGrid films={films} heading="Our Wedding Films" />
+      )}
+
+      {service.faqs && <FAQSection faqs={service.faqs} />}
 
       <ProcessSection />
 
@@ -102,7 +145,7 @@ export default async function ServicePage({
         <section className="px-6 py-16 md:py-24 bg-[var(--color-surface)]">
           <div className="max-w-5xl mx-auto">
             <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl text-white mb-10 text-center">
-              Recent {service.title} Stories
+              {service.relatedHeading ?? `Recent ${service.title} Stories`}
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
               {related.map((project) => (
@@ -132,6 +175,16 @@ export default async function ServicePage({
               ))}
             </div>
           </div>
+        </section>
+      )}
+
+      {service.closing && (
+        <BookingCTA text={service.closing} href={contactHref} />
+      )}
+
+      {service.relatedLinks && (
+        <section className="px-6 pb-24">
+          <RelatedLinks links={service.relatedLinks} />
         </section>
       )}
 

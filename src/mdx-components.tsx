@@ -40,6 +40,9 @@ const components: MDXComponents = {
   strong: ({ children }) => (
     <strong className="text-white font-medium">{children}</strong>
   ),
+  img: ({ src, alt }) => (
+    <img src={src} alt={alt ?? ""} loading="lazy" className="w-full h-auto my-8" />
+  ),
   blockquote: ({ children }) => (
     <blockquote className="border-l-2 border-[var(--color-accent)] pl-6 my-8 text-white/70 italic">
       {children}

@@ -82,7 +82,7 @@ export default function ProcessSection() {
               >
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-[var(--color-accent)]/0 via-[var(--color-accent)]/50 to-[var(--color-accent)]/0 scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
 
-                <span className="block text-center font-[family-name:var(--font-playfair)] text-5xl text-white/5 group-hover:text-[var(--color-accent)]/10 transition-colors duration-500">
+                <span className="block text-center font-[family-name:var(--font-playfair)] text-5xl text-[var(--color-accent)]/60 group-hover:text-[var(--color-accent)] transition-colors duration-500">
                   {step.number}
                 </span>
 

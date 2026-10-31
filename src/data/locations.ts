@@ -1,3 +1,5 @@
+import type { Faq, PageSection } from "./page-content";
+
 export type Location = {
   slug: string; // route folder: src/app/<slug>/page.tsx
   group: "region" | "city" | "pre-wedding";
@@ -12,6 +14,10 @@ export type Location = {
   highlights: { title: string; text: string }[];
   closing: string;
   relatedPosts: string[]; // blog slugs from src/data/blog.ts
+  // Optional long-form copy and FAQ, rendered after the highlights.
+  sections?: PageSection[];
+  faqs?: Faq[];
+  metaTitle?: string; // overrides "<heading> | Stories by Abhinav"
 };
 
 // Each entry needs a matching route folder (Next can't do a partial dynamic
@@ -26,7 +32,7 @@ export const locations: Location[] = [
     projects: { location: "Himachal Pradesh" },
     galleryHeading: "Stories From Across Himachal",
     metaDescription:
-      "Candid wedding and pre-wedding photographer in Himachal Pradesh, based in Sundernagar. Stories by Abhinav covers weddings in Manali, Shimla, Mandi, Dharamshala and beyond.",
+      "Candid wedding and pre-wedding photographer in Himachal Pradesh, based in Sundernagar. Weddings in Manali, Shimla, Mandi, Dharamshala and beyond.",
     intro:
       "Stories by Abhinav is a Himachali wedding photography studio based in Sundernagar. From valley-town family weddings to destination celebrations in the hills, we photograph weddings, pre-wedding shoots and every function in between — all across Himachal Pradesh.",
     highlights: [
@@ -45,6 +51,83 @@ export const locations: Location[] = [
     ],
     closing:
       "Getting married anywhere in Himachal Pradesh? Tell us your dates and venue and we'll plan the coverage with you.",
+    relatedPosts: [
+      "wedding-photography-cost-himachal-pradesh-guide",
+      "questions-to-ask-before-booking-wedding-photographer-himachal",
+    ],
+  },
+  {
+    slug: "wedding-photographer-sundernagar",
+    group: "city",
+    label: "Sundernagar",
+    heading: "Wedding Photographer in Sundernagar",
+    metaTitle: "Wedding Photographer in Sundernagar | Stories by Abhinav",
+    projects: { location: "Mandi" },
+    galleryHeading: "Stories From Mandi District",
+    metaDescription:
+      "Wedding photographer in Sundernagar, Mandi — our home base. Candid wedding, pre-wedding and family photography by award-winning Stories by Abhinav.",
+    intro:
+      "Sundernagar is home. Stories by Abhinav started here in 2020, and as a wedding photographer in Sundernagar we've since grown into a team of 20+ creatives covering weddings across India — but the weddings closest to our own studio are still some of our favourites.",
+    highlights: [
+      {
+        title: "Your local studio",
+        text: "Meet us in person, see albums and plan your coverage face to face — no video calls needed unless you'd prefer them.",
+      },
+      {
+        title: "No travel overheads",
+        text: "For weddings in Sundernagar and nearby towns there's no outstation travel or stay to add to your quote.",
+      },
+      {
+        title: "Award-winning team",
+        text: "WedMeGood User's Choice Award winners, with 500+ stories told over six years behind the camera.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Wedding Photography in Sundernagar, Our Home Town",
+        paragraphs: [
+          "We know Sundernagar's wedding season, its banquet halls and hotel lawns, the family homes where the haldi spills into the courtyard and the temples where the pheras take place. That local knowledge helps on the day: we know where the light falls in the evening, how long it takes to get between venues and which corners of town make for quiet couple portraits between functions.",
+          "We photograph every part of the celebration — mehendi, haldi, sangeet, baraat, pheras and vidaai — candidly and without interrupting the rituals. Many families also book [cinematic wedding films](/services/wedding-films/) so the photos and film come from one team.",
+        ],
+      },
+      {
+        heading: "Places We Love to Shoot Around Sundernagar",
+        bullets: [
+          "**Sundernagar lake** — calm water and wide skies for an easy evening couple session close to town.",
+          "**Mandi town** — temple-lined lanes and the banks of the Beas, under an hour away.",
+          "**Rewalsar** — the sacred lake town above Mandi, with monasteries and hillside views.",
+          "**Kullu and Kangra valleys** — orchards, rivers and snow-capped ranges within a few hours' drive, ideal for a pre-wedding shoot.",
+        ],
+        paragraphs: [
+          "Sundernagar sits right in the middle of Himachal, so Manali, Shimla and Dharamshala are all within a day's drive. That's why many couples from the town choose a destination-style [pre-wedding shoot](/services/pre-wedding-shoot/) in the mountains without the cost of flying a photographer in — see our [pre-wedding packages](/pre-wedding-shoot-price-himachal/) for details.",
+        ],
+      },
+      {
+        heading: "More Than Weddings",
+        paragraphs: [
+          "Because we're local, families in Sundernagar and Mandi come back to us for the chapters that follow, from [maternity shoots](/services/maternity-photoshoot/) to [newborn photography](/services/newborn-photography/).",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Stories by Abhinav based in Sundernagar?",
+        answer:
+          "Yes. Our studio and team are based in Sundernagar, Mandi district, and we cover weddings across Himachal Pradesh and the rest of India.",
+      },
+      {
+        question: "Do you charge travel for weddings in Sundernagar or Mandi?",
+        answer:
+          "No outstation travel or stay is added for weddings in Sundernagar. For venues elsewhere in Mandi district we'll confirm any local travel in your quote upfront.",
+      },
+      {
+        question: "Can we meet you before booking?",
+        answer:
+          "Absolutely. Get in touch through our contact page to arrange a visit to the studio, look through albums and talk through your wedding plans in person.",
+      },
+    ],
+    closing:
+      "Getting married in Sundernagar or nearby? Tell us your dates and venues and we'll check availability.",
     relatedPosts: [
       "wedding-photography-cost-himachal-pradesh-guide",
       "questions-to-ask-before-booking-wedding-photographer-himachal",
@@ -206,8 +289,16 @@ export const locations: Location[] = [
     closing:
       "Thinking about a pre-wedding shoot in Shimla? Tell us your dates and the look you're after.",
     relatedPosts: [
-      "manali-vs-shimla-destination-wedding",
+      "best-pre-wedding-shoot-locations-shimla",
       "mountain-pre-wedding-shoot-outfit-guide",
+    ],
+    sections: [
+      {
+        heading: "Planning Your Shimla Shoot",
+        paragraphs: [
+          "Not sure where to start? Our guide to the [best pre-wedding shoot locations in Shimla](/blog/best-pre-wedding-shoot-locations-shimla/) covers the Ridge, Jakhoo, Mashobra, Naldehra, Kufri, Chail and more — with the best light and season for each. For packages and what's included, see our [pre-wedding shoot price guide](/pre-wedding-shoot-price-himachal/), or browse [Vipasha & Nikhil's Shimla pre-wedding](/portfolio/vipasha-nikhil/).",
+        ],
+      },
     ],
   },
 ];

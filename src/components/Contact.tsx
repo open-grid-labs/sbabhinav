@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import AnimatedSection from "./AnimatedSection";
@@ -45,6 +45,19 @@ export default function Contact({
   const [formData, setFormData] = useState(emptyForm);
   const [status, setStatus] = useState<Status>("idle");
 
+  // Service pages link to /contact/?type=<shoot type> to preselect it. The
+  // page is statically exported, so the query string is only read on the
+  // client (the server snapshot is empty) and used until the visitor picks one.
+  const queryType = useSyncExternalStore(
+    () => () => {},
+    () => {
+      const type = new URLSearchParams(window.location.search).get("type");
+      return type && shootTypes.includes(type) ? type : "";
+    },
+    () => ""
+  );
+  const shootType = formData.shootType || queryType;
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -65,8 +78,9 @@ export default function Contact({
         },
         body: JSON.stringify({
           ...formData,
+          shootType,
           _subject: `New booking inquiry — ${
-            formData.shootType || "General"
+            shootType || "General"
           } from ${formData.name}`,
         }),
       });
@@ -160,7 +174,7 @@ export default function Contact({
                   <select
                     name="shootType"
                     required
-                    value={formData.shootType}
+                    value={shootType}
                     onChange={handleChange}
                     className="w-full bg-transparent border-b border-white/20 py-3 text-white outline-none focus:border-[var(--color-accent)] transition-colors appearance-none cursor-pointer"
                   >

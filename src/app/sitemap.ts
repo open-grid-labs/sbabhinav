@@ -30,6 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
+    {
+      url: `${BASE}/pre-wedding-shoot-price-himachal/`,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     { url: `${BASE}/blog/`, changeFrequency: "weekly", priority: 0.7 },
     ...blogPosts.map((p) => ({
       url: `${BASE}/blog/${p.slug}/`,

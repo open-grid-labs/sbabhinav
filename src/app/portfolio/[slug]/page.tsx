@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProjectGallery from "@/components/ProjectGallery";
+import FilmGrid from "@/components/FilmGrid";
+import { films } from "@/data/films";
 import { projects } from "@/data/projects";
 import { services } from "@/data/services";
 import { getProjectStory } from "@/lib/project-story";
@@ -44,6 +46,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
   const service = services.find((s) => s.category === project.category);
   const story = getProjectStory(project, projects);
+  const projectFilms = films.filter((f) => f.project === project.slug);
 
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -126,6 +129,13 @@ export default async function ProjectPage({ params }: PageProps) {
       <section className="px-4 md:px-6 pb-16">
         <ProjectGallery photos={project.photos} projectName={project.name} />
       </section>
+
+      {projectFilms.length > 0 && (
+        <FilmGrid
+          films={projectFilms}
+          heading={projectFilms.length > 1 ? "Watch the Films" : "Watch the Film"}
+        />
+      )}
 
       {service && (
         <section className="px-6 pb-24 text-center">

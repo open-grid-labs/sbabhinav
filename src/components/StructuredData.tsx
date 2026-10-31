@@ -20,7 +20,6 @@ const localBusiness = {
   },
   areaServed: [
     { "@type": "State", name: "Himachal Pradesh" },
-    { "@type": "City", name: "Sundernagar" }, // home base; no page of its own yet
     ...locations
       .filter((l) => l.group === "city")
       .map((l) => ({ "@type": "City", name: l.label })),

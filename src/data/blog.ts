@@ -18,6 +18,14 @@ export const blogPosts: BlogPost[] = [
     category: "Pre-Wedding",
   },
   {
+    slug: "best-pre-wedding-shoot-locations-shimla",
+    title: "Shimla Pre-Wedding Shoot Locations",
+    description:
+      "The Ridge at sunrise, Jakhoo, Mashobra, Naldehra, Kufri and Chail — where to plan a pre-wedding shoot in Shimla, with light, season and crowd tips.",
+    date: "2026-10-30",
+    category: "Pre-Wedding",
+  },
+  {
     slug: "wedding-photography-cost-himachal-pradesh-guide",
     title: "Wedding Photography Cost in Himachal Pradesh: A 2026 Guide",
     description:
