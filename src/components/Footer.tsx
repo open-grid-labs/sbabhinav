@@ -9,7 +9,9 @@ const footerLinks = [
     links: [
       { name: "Wedding Photography", href: "/services/wedding-photography/" },
       { name: "Pre-Wedding Shoots", href: "/services/pre-wedding-shoot/" },
+      { name: "Wedding Films", href: "/services/wedding-films/" },
       { name: "Maternity Shoots", href: "/services/maternity-photoshoot/" },
+      { name: "Newborn Photography", href: "/services/newborn-photography/" },
       {
         name: "Mehendi & Haldi",
         href: "/services/mehendi-haldi-photography/",

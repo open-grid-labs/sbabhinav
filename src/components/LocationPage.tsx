@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
+import PageSections from "@/components/PageSections";
 import { projects } from "@/data/projects";
 import { blogPosts } from "@/data/blog";
 import { locations, type Location } from "@/data/locations";
+import { OG_IMAGE } from "@/constants/og";
 
 export function locationMetadata(location: Location): Metadata {
+  const title = location.metaTitle ?? `${location.heading} | Stories by Abhinav`;
   return {
-    title: `${location.heading} | Stories by Abhinav`,
+    title,
     description: location.metaDescription,
     alternates: { canonical: `/${location.slug}/` },
-    openGraph: { url: `https://sbabhinav.com/${location.slug}/` },
+    openGraph: {
+      title,
+      description: location.metaDescription,
+      url: `https://sbabhinav.com/${location.slug}/`,
+      images: [OG_IMAGE],
+    },
   };
 }
 
@@ -88,6 +97,12 @@ export default function LocationPage({ location }: { location: Location }) {
         </div>
       </section>
 
+      {location.sections && (
+        <section className="px-6 pb-16">
+          <PageSections sections={location.sections} />
+        </section>
+      )}
+
       {shownProjects.length > 0 && (
         <section className="px-6 pb-16">
           <div className="max-w-5xl mx-auto">
@@ -157,7 +172,11 @@ export default function LocationPage({ location }: { location: Location }) {
         </section>
       )}
 
-      <section className="px-6 pb-24 text-center">
+      {location.faqs && <FAQSection faqs={location.faqs} />}
+
+      <section
+        className={`px-6 pb-24 text-center ${location.faqs ? "pt-24" : ""}`}
+      >
         <p className="text-white/50 max-w-xl mx-auto mb-8">
           {location.closing}
         </p>
