@@ -6,6 +6,7 @@ import PageSections from "@/components/PageSections";
 import { projects } from "@/data/projects";
 import { blogPosts } from "@/data/blog";
 import { locations, type Location } from "@/data/locations";
+import { OG_IMAGE } from "@/constants/og";
 
 export function locationMetadata(location: Location): Metadata {
   const title = location.metaTitle ?? `${location.heading} | Stories by Abhinav`;
@@ -17,6 +18,7 @@ export function locationMetadata(location: Location): Metadata {
       title,
       description: location.metaDescription,
       url: `https://sbabhinav.com/${location.slug}/`,
+      images: [OG_IMAGE],
     },
   };
 }

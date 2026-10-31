@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog";
+import { OG_IMAGE } from "@/constants/og";
 
 const BASE = "https://sbabhinav.com";
 
@@ -28,6 +29,7 @@ export async function generateMetadata({
       url: `${BASE}/blog/${post.slug}/`,
       type: "article",
       publishedTime: post.date,
+      images: [OG_IMAGE],
     },
   };
 }
