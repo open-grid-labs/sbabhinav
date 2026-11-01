@@ -91,9 +91,15 @@ export default function Footer() {
         </AnimatedSection>
 
         <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/30 text-sm">
+          <p className="text-white/30 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} Stories by Abhinav. All rights
-            reserved.
+            reserved. Photographs may not be used without permission.{" "}
+            <a
+              href="/privacy-policy/"
+              className="underline underline-offset-4 hover:text-[var(--color-accent)] transition-colors duration-300"
+            >
+              Privacy Policy
+            </a>
           </p>
           <p className="text-white/20 text-xs">
             Capturing stories across India & Worldwide
