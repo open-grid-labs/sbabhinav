@@ -11,7 +11,7 @@ const SLUG = "privacy-policy";
 const TITLE = "Privacy Policy | Stories by Abhinav";
 const DESCRIPTION =
   "How Stories by Abhinav collects, uses and protects the details you share through our website and contact form, and how to ask us to delete them.";
-const LAST_UPDATED = "1 November 2026";
+const LAST_UPDATED = "15 November 2026";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -47,7 +47,7 @@ const sections: PageSection[] = [
   {
     heading: "What We Don't Collect",
     paragraphs: [
-      "This website doesn't use analytics, advertising trackers or tracking cookies, and we don't build profiles of visitors. You can browse every page without telling us anything about yourself.",
+      "We don't add analytics, advertising trackers or tracking cookies to this website, and we don't build profiles of visitors. The embedded YouTube films are the one exception to this, as explained below. You can browse every page without telling us anything about yourself.",
     ],
   },
   {
@@ -65,7 +65,7 @@ const sections: PageSection[] = [
       "**Formspree** receives contact form submissions and forwards them to our email inbox. Formspree is based in the United States, so your submission may be processed there.",
       "**Gmail** (Google) is where enquiries arrive and where we reply to you.",
       "**GitHub Pages** hosts this website. Like most web hosts, it may log basic technical details such as your IP address to keep the site secure and running.",
-      "**YouTube** provides the films embedded on some pages. We use YouTube's privacy-enhanced mode, so YouTube doesn't set cookies until you press play. Once you play a film, YouTube's own privacy policy applies.",
+      "**YouTube** (Google) provides the films embedded on some pages, using YouTube's privacy-enhanced mode (youtube-nocookie.com). A film's player loads as you scroll near it, before you press play, so at that point your browser connects to YouTube and Google servers and shares technical details such as your IP address, browser and device information, and that you're visiting this website. YouTube may also store or read data on your device. Pressing play sends YouTube further information about your viewing. YouTube's handling of all of this, both before and after you press play, is covered by [Google's privacy policy](https://policies.google.com/privacy).",
     ],
   },
   {

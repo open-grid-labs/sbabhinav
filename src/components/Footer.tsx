@@ -91,7 +91,7 @@ export default function Footer() {
         </AnimatedSection>
 
         <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/30 text-sm text-center md:text-left">
+          <p className="text-white/60 text-sm text-center md:text-left">
             &copy; {new Date().getFullYear()} Stories by Abhinav. All rights
             reserved. Photographs may not be used without permission.{" "}
             <a
