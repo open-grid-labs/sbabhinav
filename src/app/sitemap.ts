@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     { url: `${BASE}/blog/`, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE}/privacy-policy/`, changeFrequency: "yearly", priority: 0.3 },
     ...blogPosts.map((p) => ({
       url: `${BASE}/blog/${p.slug}/`,
       lastModified: p.date,

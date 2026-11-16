@@ -247,6 +247,21 @@ export default function Contact({
                   {status === "sending" ? "Sending…" : "Send Inquiry"}
                 </motion.button>
 
+                <p className="text-white/60 text-xs">
+                  By sending this form, you agree to our{" "}
+                  <a
+                    href="/privacy-policy/"
+                    // New tab so the half-filled form above survives: its
+                    // state is local and would be lost on navigation.
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-4 hover:text-[var(--color-accent)] transition-colors duration-300"
+                  >
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+
                 {status === "sent" && (
                   <p className="text-[var(--color-accent)] text-sm">
                     Thank you! Your inquiry has been sent — we&apos;ll be in
