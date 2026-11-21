@@ -2,10 +2,19 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
 import { blogPosts } from "@/data/blog";
 import { OG_IMAGE } from "@/constants/og";
 
 const BASE = "https://sbabhinav.com";
+
+function formatDate(isoDate: string) {
+  return new Date(isoDate).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -29,6 +38,7 @@ export async function generateMetadata({
       url: `${BASE}/blog/${post.slug}/`,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.updated,
       images: [OG_IMAGE],
     },
   };
@@ -66,6 +76,7 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
+    dateModified: post.updated ?? post.date,
     url: `${BASE}/blog/${post.slug}/`,
     author: { "@type": "Person", name: "Abhinav" },
     publisher: { "@id": `${BASE}/#business` },
@@ -91,13 +102,15 @@ export default async function BlogPostPage({
         <h1 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl text-white mt-4 mb-6 max-w-3xl mx-auto">
           {post.title}
         </h1>
-        <time dateTime={post.date} className="block text-white/30 text-xs">
-          {new Date(post.date).toLocaleDateString("en-IN", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
-        </time>
+        <p className="text-white/30 text-xs">
+          <time dateTime={post.date}>{formatDate(post.date)}</time>
+          {post.updated && (
+            <>
+              {" · Updated "}
+              <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+            </>
+          )}
+        </p>
         <nav className="text-white/30 text-xs mt-6" aria-label="Breadcrumb">
           <a href="/" className="hover:text-[var(--color-accent)]">
             Home
@@ -114,7 +127,11 @@ export default async function BlogPostPage({
         </div>
       </article>
 
-      <section className="px-6 pb-24 text-center">
+      {post.faqs && <FAQSection faqs={post.faqs} />}
+
+      <section
+        className={`px-6 ${post.faqs ? "py-24" : "pb-24"} text-center`}
+      >
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href="/portfolio/"
