@@ -54,6 +54,9 @@ export const locations: Location[] = [
     relatedPosts: [
       "wedding-photography-cost-himachal-pradesh-guide",
       "questions-to-ask-before-booking-wedding-photographer-himachal",
+      "destination-wedding-cost-himachal-pradesh",
+      "himachali-wedding-rituals-photography-guide",
+      "when-to-book-wedding-photographer-himachal",
     ],
   },
   {
@@ -131,6 +134,8 @@ export const locations: Location[] = [
     relatedPosts: [
       "wedding-photography-cost-himachal-pradesh-guide",
       "questions-to-ask-before-booking-wedding-photographer-himachal",
+      "pre-wedding-shoot-locations-mandi-sundernagar",
+      "himachali-wedding-rituals-photography-guide",
     ],
   },
   {
@@ -163,6 +168,9 @@ export const locations: Location[] = [
     relatedPosts: [
       "best-pre-wedding-shoot-locations-manali",
       "manali-vs-shimla-destination-wedding",
+      "pre-wedding-shoot-cost-manali",
+      "snow-wedding-himachal-pradesh-guide",
+      "pre-wedding-shoot-spiti-lahaul-sissu",
     ],
   },
   {
@@ -195,6 +203,8 @@ export const locations: Location[] = [
     relatedPosts: [
       "questions-to-ask-before-booking-wedding-photographer-himachal",
       "mountain-pre-wedding-shoot-outfit-guide",
+      "pre-wedding-shoot-locations-mandi-sundernagar",
+      "himachali-wedding-rituals-photography-guide",
     ],
   },
   {
@@ -227,6 +237,9 @@ export const locations: Location[] = [
     relatedPosts: [
       "manali-vs-shimla-destination-wedding",
       "mountain-pre-wedding-shoot-outfit-guide",
+      "best-pre-wedding-shoot-locations-shimla",
+      "snow-wedding-himachal-pradesh-guide",
+      "how-to-choose-destination-wedding-venue-himachal",
     ],
   },
   {
@@ -259,6 +272,8 @@ export const locations: Location[] = [
     relatedPosts: [
       "mountain-pre-wedding-shoot-outfit-guide",
       "questions-to-ask-before-booking-wedding-photographer-himachal",
+      "pre-wedding-shoot-locations-dharamshala-mcleodganj",
+      "best-time-for-pre-wedding-shoot-himachal",
     ],
   },
   {
@@ -291,6 +306,8 @@ export const locations: Location[] = [
     relatedPosts: [
       "best-pre-wedding-shoot-locations-shimla",
       "mountain-pre-wedding-shoot-outfit-guide",
+      "snow-wedding-himachal-pradesh-guide",
+      "best-time-for-pre-wedding-shoot-himachal",
     ],
     sections: [
       {
